@@ -23,7 +23,7 @@
     <div class="max-w-4xl mx-auto px-6 py-8">
         <h1 class="text-4xl md:text-5xl font-black text-brand-chestnut mb-8">Privacy Policy</h1>
         <p class="text-sm text-text-muted mb-8">Last updated: February 9, 2026</p>
-        <p class="text-sm text-text-muted mb-8 font-semibold">Version 1.0.1</p>
+        <p class="text-sm text-text-muted mb-8 font-semibold">Version 1.0.2</p>
 
         <div class="space-y-8 text-text-muted">
             <section>
@@ -64,7 +64,7 @@
                 <p class="leading-relaxed mb-3">We use your data to:</p>
                 <ul class="list-disc list-inside space-y-2 ml-4">
                     <li>Provide and maintain the music playback functionality</li>
-                    <li>Sync your music library across your devices (if you enable cloud features)</li>
+                    <li>Sync your music library using your own connected cloud storage providers (if you enable cloud features)</li>
                     <li>Remember your preferences and settings</li>
                     <li>Improve app performance, stability, and user experience through analytics</li>
                     <li>Diagnose and fix crashes and bugs through automated error reporting</li>
@@ -95,16 +95,15 @@
             <section>
                 <h2 class="text-2xl font-black text-brand-chestnut mb-4">4a. Data Controller Information</h2>
                 <p class="leading-relaxed mb-3">
-                    <strong>Data Controller:</strong> LizMusic Inc. is the data controller responsible for your personal data.
+                    <strong>Data Controller:</strong> LizMusic (Individual Developer) is the data controller responsible for your personal data.
                 </p>
                 <p class="leading-relaxed mb-3">
                     <strong>Contact Information:</strong><br>
                     Email: lizmediaapp@gmail.com
                 </p>
                 <p class="leading-relaxed mb-3">
-                    <strong>Data Protection Officer (DPO):</strong><br>
-                    Email: lizmediaapp@gmail.com<br>
-                    Our Data Protection Officer is available to answer questions about how we process your personal data and to assist with exercising your privacy rights.
+                    <strong>Data Protection Contact:</strong><br>
+                    We do not have a designated Data Protection Officer as we are an individual developer and do not engage in large-scale processing of personal data. For all privacy-related inquiries, data protection questions, or to exercise your rights, please contact us at: lizmediaapp@gmail.com
                 </p>
             </section>
 
@@ -272,7 +271,7 @@
                     <li><strong>Right to Lodge a Complaint:</strong> File a complaint with your national data protection authority</li>
                 </ul>
                 <p class="leading-relaxed mt-3">
-                    To exercise your GDPR rights, contact our Data Protection Officer at: lizmediaapp@gmail.com
+                    To exercise your GDPR rights, contact us at: lizmediaapp@gmail.com
                 </p>
                 <p class="leading-relaxed mt-3">
                     EU Supervisory Authority Contact: You can find your local data protection authority at: https://edpb.europa.eu/about-edpb/board/members_en
@@ -360,17 +359,19 @@
                     LizMusic requests the following permissions to provide its features. All permissions are used only for their stated purpose:
                 </p>
                 <ul class="list-disc list-inside space-y-2 ml-4">
-                    <li><strong>Storage/Media Access:</strong> To read and play your music files from device storage</li>
-                    <li><strong>Internet Access:</strong> For cloud storage synchronization, app updates, and analytics</li>
-                    <li><strong>Bluetooth:</strong> To connect to car audio systems and wireless speakers for playback control</li>
-                    <li><strong>Notifications:</strong> To display playback controls and now-playing information</li>
-                    <li><strong>Run at Startup:</strong> Optional feature to restore playback state when device reboots</li>
-                    <li><strong>Display over Other Apps:</strong> Optional floating player widget for quick access while using other apps</li>
-                    <li><strong>Motion Sensors:</strong> Optional shake-to-skip feature using device accelerometer (data processed locally)</li>
-                    <li><strong>Prevent Device from Sleeping:</strong> To maintain playback during long sessions</li>
+                    <li><strong>Internet Access (INTERNET):</strong> Required for cloud storage synchronization with your own cloud accounts, app updates, and optional analytics</li>
+                    <li><strong>Storage/Media Access (READ_EXTERNAL_STORAGE, READ_MEDIA_AUDIO):</strong> To read and play your music files from device storage. On Android 13+, we use READ_MEDIA_AUDIO for more granular media-only access</li>
+                    <li><strong>Storage Write Access (WRITE_EXTERNAL_STORAGE):</strong> Used only on Android 9 and below to save playlists and app data to external storage</li>
+                    <li><strong>Foreground Service (FOREGROUND_SERVICE, FOREGROUND_SERVICE_MEDIA_PLAYBACK):</strong> To keep music playing in the background and display persistent playback notifications</li>
+                    <li><strong>Notifications (POST_NOTIFICATIONS):</strong> To display playback controls, now-playing information, and media notifications (Android 13+ requires explicit permission)</li>
+                    <li><strong>Wake Lock (WAKE_LOCK):</strong> To prevent the device from sleeping during active playback sessions</li>
+                    <li><strong>Bluetooth (BLUETOOTH, BLUETOOTH_CONNECT):</strong> To connect to car audio systems, wireless headphones, and speakers for playback control and audio output</li>
+                    <li><strong>Exact Alarm (SCHEDULE_EXACT_ALARM):</strong> For precise timing features such as sleep timer and scheduled playback</li>
+                    <li><strong>Boot Completed (RECEIVE_BOOT_COMPLETED):</strong> Optional feature to restore playback state or resume widgets when device reboots</li>
+                    <li><strong>Display over Other Apps (SYSTEM_ALERT_WINDOW):</strong> Optional floating player widget for quick access while using other apps</li>
                 </ul>
                 <p class="leading-relaxed mt-3">
-                    You can revoke any permission at any time through your device settings. Some features may not work if related permissions are denied.
+                    You can revoke any permission at any time through your device settings (Settings → Apps → LizMusic → Permissions). Some features may not work if related permissions are denied.
                 </p>
             </section>
 
