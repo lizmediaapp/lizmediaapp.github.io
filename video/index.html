@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProPlay - Engineered for Performance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f0eb;
+            color: #2d1b19;
+            margin: 0;
+            padding: 0;
+        }
+        .bg-terracotta { background-color: #8b3a1e; }
+        .text-terracotta { color: #8b3a1e; }
+        .border-terracotta { border-color: #8b3a1e; }
+        .hero-gradient {
+            background: linear-gradient(135deg, #e7d5c9 0%, #f5f0eb 100%);
+        }
+        
+        /* Keyframes for the player simulation */
+        @keyframes scanline {
+            0% { transform: translateY(-100%); opacity: 0; }
+            50% { opacity: 0.5; }
+            100% { transform: translateY(1000%); opacity: 0; }
+        }
+        @keyframes spectrum {
+            0%, 100% { height: 4px; }
+            50% { height: 16px; }
+        }
+        @keyframes pulse-soft {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.05); opacity: 0.8; }
+        }
+        @keyframes progress-slide {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+
+        .animate-scan { animation: scanline 4s linear infinite; }
+        .animate-pulse-soft { animation: pulse-soft 3s ease-in-out infinite; }
+        .animate-progress { animation: progress-slide 15s linear infinite; }
+        
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f5f0eb; }
+        ::-webkit-scrollbar-thumb { background: #d1b8ab; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #8b3a1e; }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/video/assets/index-C4_A9kjx.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
