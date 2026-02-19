@@ -5,10 +5,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LizMedia Ecosystem</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- GitHub Pages SPA redirect handler -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafgraph/spa-github-pages
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "brand-orange": "#FDBA46",
+                        "brand-chestnut": "#8B4513",
+                        "brand-chestnut-dark": "#5D2E0C",
+                        "text-main": "#3E2723",
+                        "text-muted": "#6D4C41",
+                        "bg-light": "#FFFBF0"
+                    },
+                    fontFamily: {
+                        sans: ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
     <style>
       :root {
         --primary-brown: #4a2e1d;
@@ -20,6 +58,12 @@
           radial-gradient(circle at 2px 2px, rgba(74, 46, 29, 0.03) 1px, transparent 0);
         background-size: 24px 24px;
         scroll-behavior: smooth;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .filled-icon {
+        font-variation-settings: 'FILL' 1;
       }
       .glass-card {
         background: rgba(255, 255, 255, 0.8);
@@ -43,9 +87,46 @@
         50% { transform: translateY(-10px); }
         100% { transform: translateY(0px); }
       }
+      @keyframes wave {
+        0%, 100% { transform: scaleY(0.5); }
+        50% { transform: scaleY(1.5); }
+      }
+      @keyframes scanline {
+        0% { transform: translateY(-100%); opacity: 0; }
+        50% { opacity: 0.5; }
+        100% { transform: translateY(1000%); opacity: 0; }
+      }
+      @keyframes spectrum {
+        0%, 100% { height: 4px; }
+        50% { height: 16px; }
+      }
+      @keyframes pulse-soft {
+        0%, 100% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.05); opacity: 0.8; }
+      }
+      @keyframes progress-slide {
+        0% { width: 0%; }
+        100% { width: 100%; }
+      }
       .animate-float {
         animation: float 6s ease-in-out infinite;
       }
+      .wave-bar {
+        animation: wave 1.2s ease-in-out infinite;
+      }
+      .bg-terracotta { background-color: #8b3a1e; }
+      .text-terracotta { color: #8b3a1e; }
+      .border-terracotta { border-color: #8b3a1e; }
+      .hero-gradient {
+        background: linear-gradient(135deg, #e7d5c9 0%, #f5f0eb 100%);
+      }
+      .animate-scan { animation: scanline 4s linear infinite; }
+      .animate-pulse-soft { animation: pulse-soft 3s ease-in-out infinite; }
+      .animate-progress { animation: progress-slide 15s linear infinite; }
+      ::-webkit-scrollbar { width: 8px; }
+      ::-webkit-scrollbar-track { background: #f5f0eb; }
+      ::-webkit-scrollbar-thumb { background: #d1b8ab; border-radius: 10px; }
+      ::-webkit-scrollbar-thumb:hover { background: #8b3a1e; }
     </style>
 
 <link rel="stylesheet" href="/index.css">
@@ -60,7 +141,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-CNFOCrug.js"></script>
+  <script type="module" crossorigin src="/assets/index-CfkDVRjc.js"></script>
 </head>
   <body>
     <div id="root"></div>
