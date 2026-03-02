@@ -5,6 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LizMedia Ecosystem</title>
+    <meta name="description" content="LizMedia Ecosystem – a unified hub for LizMusic, LizVideo and more professional media tools with local and WebDAV support." />
+    <meta property="og:title" content="LizMedia Ecosystem" />
+    <meta property="og:description" content="LizMedia Ecosystem – a unified hub for LizMusic, LizVideo and more professional media tools." />
+    <meta property="og:url" content="https://lizmediaapp.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="LizMedia Ecosystem" />
+    <meta name="twitter:description" content="The unified hub for LizMusic, LizVideo and more professional media tools." />
+    <link rel="icon" type="image/x-icon" href="/image/lizmusic.ico" />
     
     <!-- GitHub Pages SPA redirect handler -->
     <script type="text/javascript">
@@ -22,128 +31,17 @@
       }(window.location))
     </script>
     
+    <!-- Non-blocking font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script>
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "brand-orange": "#FDBA46",
-                        "brand-chestnut": "#8B4513",
-                        "brand-chestnut-dark": "#5D2E0C",
-                        "text-main": "#3E2723",
-                        "text-muted": "#6D4C41",
-                        "bg-light": "#FFFBF0"
-                    },
-                    fontFamily: {
-                        sans: ["Inter", "sans-serif"]
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-      :root {
-        --primary-brown: #4a2e1d;
-      }
-      body {
-        font-family: 'Inter', sans-serif;
-        background-color: #fdfaf6;
-        background-image: 
-          radial-gradient(circle at 2px 2px, rgba(74, 46, 29, 0.03) 1px, transparent 0);
-        background-size: 24px 24px;
-        scroll-behavior: smooth;
-      }
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-      }
-      .filled-icon {
-        font-variation-settings: 'FILL' 1;
-      }
-      .glass-card {
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.4);
-      }
-      .hover-lift {
-        transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-      }
-      .hover-lift:hover {
-        transform: translateY(-12px) scale(1.02);
-        box-shadow: 0 30px 60px -12px rgba(74, 46, 29, 0.15);
-      }
-      .app-disabled {
-        filter: grayscale(1) opacity(0.6);
-        pointer-events: none;
-      }
-      @keyframes float {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
-        100% { transform: translateY(0px); }
-      }
-      @keyframes wave {
-        0%, 100% { transform: scaleY(0.5); }
-        50% { transform: scaleY(1.5); }
-      }
-      @keyframes scanline {
-        0% { transform: translateY(-100%); opacity: 0; }
-        50% { opacity: 0.5; }
-        100% { transform: translateY(1000%); opacity: 0; }
-      }
-      @keyframes spectrum {
-        0%, 100% { height: 4px; }
-        50% { height: 16px; }
-      }
-      @keyframes pulse-soft {
-        0%, 100% { transform: scale(1); opacity: 1; }
-        50% { transform: scale(1.05); opacity: 0.8; }
-      }
-      @keyframes progress-slide {
-        0% { width: 0%; }
-        100% { width: 100%; }
-      }
-      .animate-float {
-        animation: float 6s ease-in-out infinite;
-      }
-      .wave-bar {
-        animation: wave 1.2s ease-in-out infinite;
-      }
-      .bg-terracotta { background-color: #8b3a1e; }
-      .text-terracotta { color: #8b3a1e; }
-      .border-terracotta { border-color: #8b3a1e; }
-      .hero-gradient {
-        background: linear-gradient(135deg, #e7d5c9 0%, #f5f0eb 100%);
-      }
-      .animate-scan { animation: scanline 4s linear infinite; }
-      .animate-pulse-soft { animation: pulse-soft 3s ease-in-out infinite; }
-      .animate-progress { animation: progress-slide 15s linear infinite; }
-      ::-webkit-scrollbar { width: 8px; }
-      ::-webkit-scrollbar-track { background: #f5f0eb; }
-      ::-webkit-scrollbar-thumb { background: #d1b8ab; border-radius: 10px; }
-      ::-webkit-scrollbar-thumb:hover { background: #8b3a1e; }
-    </style>
-
-<link rel="stylesheet" href="/index.css">
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.574.0",
-    "@google/genai": "https://esm.sh/@google/genai@^1.41.0"
-  }
-}
-</script>
-  <script type="module" crossorigin src="/assets/index-CpCBRyCn.js"></script>
-</head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"></noscript>
+    <script type="module" crossorigin src="/assets/index-CEkxwzFM.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-v1LdAxGq.css">
+  </head>
   <body>
     <div id="root"></div>
-</body>
+  </body>
 </html>
