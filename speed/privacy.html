@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - LizSpeedTest</title>
+    <link rel="icon" type="image/x-icon" href="./image/icon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#f7911d',
+                        'text-muted': '#6B7280'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-white">
+    <div class="max-w-4xl mx-auto px-6 py-8">
+
+        <!-- Header -->
+        <div class="flex items-center gap-3 mb-10">
+            <img src="./image/icon.ico" alt="LizSpeedTest" class="h-10 w-10 rounded-lg">
+            <span class="text-xl font-extrabold text-slate-900">LizSpeedTest</span>
+        </div>
+
+        <h1 class="text-4xl md:text-5xl font-black text-primary mb-4">Privacy Policy</h1>
+        <p class="text-sm text-text-muted mb-2">Last updated: March 8, 2026</p>
+        <p class="text-sm text-text-muted mb-10">Package: <code class="bg-slate-100 px-1 rounded">io.vicp.pomok.liz.speed</code></p>
+
+        <div class="space-y-10 text-text-muted text-[15px] leading-relaxed">
+
+            <!-- 1 -->
+            <section>
+                <h2 class="text-2xl font-black text-slate-800 mb-3">1. Introduction</h2>
+                <p class="mb-3">
+                    Welcome to <strong>LizSpeedTest</strong> ("we", "our", or "us"), developed by <strong>Liz Media</strong>.
+                    We are committed to protecting your privacy. This Privacy Policy explains what information we collect,
+                    how we use it, and your rights regarding that information when you use our Android application.
+                </p>
+                <p>
+                    By downloading and using LizSpeedTest, you agree to the collection and use of information in accordance
+                    with this policy.
+                </p>
+            </section>
+
+            <!-- 2 -->
+            <section>
+                <h2 class="text-2xl font-black text-slate-800 mb-3">2. Information We Collect</h2>
+
+                <h3 class="text-lg font-bold text-slate-700 mt-4 mb-2">2.1 Information Stored Locally on Your Device</h3>
+                <p class="mb-3">The following data is stored exclusively on your device and is <strong>never transmitted to our servers</strong>:</p>
+                <ul class="list-disc list-inside space-y-2 ml-4">
+                    <li><strong>Speed Test Results:</strong> Download speed, upload speed, ping (latency), jitter, and packet loss recorded from each test. Up to 300 results are stored locally.</li>
+                    <li><strong>Server Information:</strong> The test server name and city used for each test.</li>
+                    <li><strong>Network Metadata:</strong> Your public IP address and ISP name as returned by the speed test server at the time of the test. This is stored locally only and is not collected by us.</li>
+                    <li><strong>Test Timestamps:</strong> Date and time of each completed speed test.</li>
+                    <li><strong>App Preferences:</strong> Your chosen language, speed units, connection mode (single/multi-thread), speed scale, and history save toggle — stored locally via Android DataStore.</li>
+                </ul>
+
+                <h3 class="text-lg font-bold text-slate-700 mt-6 mb-2">2.2 Information Transmitted During Speed Testing</h3>
+                <p class="mb-3">
+                    When you run a speed test, the app connects to distributed third-party speed test servers around the world.
+                    The following occurs during this connection:
+                </p>
+                <ul class="list-disc list-inside space-y-2 ml-4">
+                    <li><strong>Your Public IP Address</strong> is sent to speed test servers as part of the standard TCP/IP connection required to perform the test. This is technically necessary and cannot be avoided in any speed test.</li>
+                    <li><strong>Test Data Packets:</strong> Anonymous download and upload data payloads are exchanged with speed test servers solely to measure connection speed. These packets contain no personal information.</li>
+                    <li><strong>Server Configuration Request:</strong> The app fetches the list of available test servers and your approximate geographic location (derived from your IP) from the speed test service's public API.</li>
+                </ul>
+
+                <h3 class="text-lg font-bold text-slate-700 mt-6 mb-2">2.3 Information We Do NOT Collect</h3>
+                <ul class="list-disc list-inside space-y-2 ml-4">
+                    <li>We do <strong>not</strong> collect your name, email address, phone number, or any account information.</li>
+                    <li>We do <strong>not</strong> access your location, contacts, camera, microphone, or files.</li>
+                    <li>We do <strong>not</strong> track you across apps or websites for targeted advertising.</li>
+                    <li>We do <strong>not</strong> sell your personal data to any third party.</li>
+                    <li>We do <strong>not</strong> share your personal data with third parties except as described in Section 7 (Third-Party Services) below.</li>
+                </ul>
+            </section>
+
+            <!-- 3 -->
+            <section>
+                <h2 class="text-2xl font-black text-slate-800 mb-3">3. Permissions Used</h2>
+                <p class="mb-3">LizSpeedTest requests the following Android permissions, all of which are strictly necessary:</p>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50">
+                                <th class="text-left p-3 border border-slate-200 font-bold text-slate-700">Permission</th>
+                                <th class="text-left p-3 border border-slate-200 font-bold text-slate-700">Purpose</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="p-3 border border-slate-200 font-mono text-xs">INTERNET</td>
+                                <td class="p-3 border border-slate-200">Required to connect to speed test servers and perform download/upload speed measurements.</td>
+                            </tr>
+                            <tr class="bg-slate-50">
+                                <td class="p-3 border border-slate-200 font-mono text-xs">ACCESS_NETWORK_STATE</td>
+                                <td class="p-3 border border-slate-200">Checks whether a network connection is available before initiating a test.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border border-slate-200 font-mono text-xs">ACCESS_WIFI_STATE</td>
+                                <td class="p-3 border border-slate-200">Detects whether you are connected via Wi-Fi or mobile data, displayed as informational context.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="mt-3 text-sm">No dangerous permissions (location, contacts, storage, camera, microphone) are requested.</p>
+            </section>
+
+            <!-- 4 -->
+            <section>
+                <h2 class="text-2xl font-black text-slate-800 mb-3">4. Data Retention and Deletion</h2>
+                <ul class="list-disc list-inside space-y-2 ml-4">
+                    <li><strong>Test History:</strong> Stored locally on your device. The app automatically retains up to 300 records and removes the oldest when this limit is exceeded. You may manually delete individual records or clear all history at any time in the History screen.</li>
+                    <li><strong>App Preferences:</strong> Stored locally and cleared when you uninstall the app.</li>
+                    <li><strong>No server-side data:</strong> Since we collect no data on our servers, there is nothing to request deletion of from us.</li>
+                </ul>
+            </section>
+
+            <!-- 5 -->
+            <section>
+                <h2 class="text-2xl font-black text-slate-800 mb-3">5. Children's Privacy</h2>
+                <p>
+                    LizSpeedTest does not knowingly collect any personal information from children under the age of 13 (or the applicable age threshold in your jurisdiction). The app is a general-purpose network utility and does not target children. If you believe your child has provided personal information through the app, please contact us and we will take appropriate steps.
+                </p>
+            </section>
+
+            <!-- 6 -->
+            <section>
+                <h2 class="text-2xl font-black text-slate-800 mb-3">6. Data Security</h2>
+                <p>
+                    All locally stored data (test history and preferences) is stored in your device's sandboxed application storage, which is protected by Android's built-in security model. App preferences are stored using Android DataStore with encryption on supported devices. Since we do not transmit personal data to our servers, the risk surface for data breaches is minimal.
+                </p>
+            </section>
+
+            <!-- 7 -->
+            <section>
+                <h2 class="text-2xl font-black text-slate-800 mb-3">7. Third-Party Services</h2>
+
+                <h3 class="text-lg font-bold text-slate-700 mt-2 mb-2">7.1 Speed Test Infrastructure</h3>
+                <p class="mb-3">
+                    The App connects to a global network of <strong>third-party speed test servers</strong> to perform measurements.
+                    This is initiated only when you tap "Start", and is limited to the technical data required (IP address and test data packets).
+                </p>
+
+                <h3 class="text-lg font-bold text-slate-700 mt-4 mb-2">7.2 Analytics (Google Firebase Analytics)</h3>
+                <p class="mb-3">
+                    We use <strong>Google Firebase Analytics</strong> to collect anonymous usage statistics that help us understand
+                    how users interact with the app and improve its features. Firebase Analytics may collect:
+                </p>
+                <ul class="list-disc list-inside space-y-1 ml-4 mb-3">
+                    <li>Anonymous device identifiers and app instance IDs</li>
+                    <li>App version, device model, operating system version</li>
+                    <li>Screen views and general interaction events (no personal content)</li>
+                </ul>
+                <p class="mb-2">This data is sent to Google and is governed by <a href="https://policies.google.com/privacy" target="_blank" class="text-primary underline">Google's Privacy Policy</a>. Firebase Analytics does not share your data with us in an identifiable form.</p>
+
+                <h3 class="text-lg font-bold text-slate-700 mt-4 mb-2">7.3 Crash Reporting (Firebase Crashlytics)</h3>
+                <p class="mb-3">
+                    We use <strong>Firebase Crashlytics</strong> to automatically collect crash reports when the app encounters an error.
+                    Crash reports may include:
+                </p>
+                <ul class="list-disc list-inside space-y-1 ml-4 mb-3">
+                    <li>Stack traces and error messages (no personal user data)</li>
+                    <li>Device model, OS version, and app version at time of crash</li>
+                    <li>An anonymous installation ID</li>
+                </ul>
+                <p class="mb-2">Crash data is sent to Google and governed by <a href="https://policies.google.com/privacy" target="_blank" class="text-primary underline">Google's Privacy Policy</a>. This data is used solely to identify and fix bugs.</p>
+
+                <h3 class="text-lg font-bold text-slate-700 mt-4 mb-2">7.4 Advertising</h3>
+                <p>
+                    The App may display advertisements provided by third-party ad networks. These networks may use cookies,
+                    device identifiers, or similar technologies to serve relevant ads. Ad networks operate under their own
+                    privacy policies. We do not share personally identifiable information with ad networks. You may opt out
+                    of personalized advertising in your device settings (Settings → Google → Ads → Opt out of Ads Personalization).
+                </p>
+            </section>
+
+            <!-- 8 -->
+            <section>
+                <h2 class="text-2xl font-black text-slate-800 mb-3">8. Your Rights</h2>
+                <p class="mb-3">Depending on your location, you may have the following rights:</p>
+                <ul class="list-disc list-inside space-y-2 ml-4">
+                    <li><strong>Right to Access:</strong> All data LizSpeedTest stores is directly accessible on your own device.</li>
+                    <li><strong>Right to Deletion:</strong> You may delete individual test results, clear all history, or uninstall the app to remove all locally stored data.</li>
+                    <li><strong>Right to Opt-Out:</strong> You may disable test history saving at any time in Settings → Save History.</li>
+                </ul>
+                <p class="mt-3">For any privacy-related inquiries, please contact us at the email address below.</p>
+            </section>
+
+            <!-- 9 -->
+            <section>
+                <h2 class="text-2xl font-black text-slate-800 mb-3">9. Google Play Data Safety</h2>
+                <p class="mb-3">In accordance with Google Play's Data Safety requirements, here is a summary of our data practices:</p>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm border-collapse">
+                        <thead>
+                            <tr class="bg-slate-50">
+                                <th class="text-left p-3 border border-slate-200 font-bold text-slate-700">Data Type</th>
+                                <th class="text-left p-3 border border-slate-200 font-bold text-slate-700">Collected</th>
+                                <th class="text-left p-3 border border-slate-200 font-bold text-slate-700">Shared</th>
+                                <th class="text-left p-3 border border-slate-200 font-bold text-slate-700">Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="p-3 border border-slate-200">Personal info (name, email)</td>
+                                <td class="p-3 border border-slate-200">No</td>
+                                <td class="p-3 border border-slate-200">No</td>
+                                <td class="p-3 border border-slate-200">Not collected</td>
+                            </tr>
+                            <tr class="bg-slate-50">
+                                <td class="p-3 border border-slate-200">Network performance data</td>
+                                <td class="p-3 border border-slate-200">Yes</td>
+                                <td class="p-3 border border-slate-200">No</td>
+                                <td class="p-3 border border-slate-200">Stored locally only; user-initiated deletion</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border border-slate-200">IP address / ISP</td>
+                                <td class="p-3 border border-slate-200">Yes</td>
+                                <td class="p-3 border border-slate-200">Speed test servers only</td>
+                                <td class="p-3 border border-slate-200">Transmitted to test servers during measurement only; stored locally</td>
+                            </tr>
+                            <tr class="bg-slate-50">
+                                <td class="p-3 border border-slate-200">Location (precise or coarse)</td>
+                                <td class="p-3 border border-slate-200">No</td>
+                                <td class="p-3 border border-slate-200">No</td>
+                                <td class="p-3 border border-slate-200">Not requested</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border border-slate-200">App activity / usage analytics</td>
+                                <td class="p-3 border border-slate-200">Yes</td>
+                                <td class="p-3 border border-slate-200">Google (Firebase)</td>
+                                <td class="p-3 border border-slate-200">Anonymous events only; no personal content; governed by Google Privacy Policy</td>
+                            </tr>
+                            <tr class="bg-slate-50">
+                                <td class="p-3 border border-slate-200">Crash logs</td>
+                                <td class="p-3 border border-slate-200">Yes</td>
+                                <td class="p-3 border border-slate-200">Google (Firebase)</td>
+                                <td class="p-3 border border-slate-200">Stack traces and device info only; no personal data; used to fix bugs</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border border-slate-200">Financial / health / contacts</td>
+                                <td class="p-3 border border-slate-200">No</td>
+                                <td class="p-3 border border-slate-200">No</td>
+                                <td class="p-3 border border-slate-200">Not collected</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 10 -->
+            <section>
+                <h2 class="text-2xl font-black text-slate-800 mb-3">10. Changes to This Privacy Policy</h2>
+                <p>
+                    We may update this Privacy Policy from time to time. We will notify you of any changes by updating
+                    the "Last updated" date at the top of this policy. Continued use of the app after any changes constitutes
+                    your acknowledgment of the updated policy. We encourage you to review this policy periodically.
+                </p>
+            </section>
+
+            <!-- 11 -->
+            <section>
+                <h2 class="text-2xl font-black text-slate-800 mb-3">11. Contact Us</h2>
+                <p class="mb-3">If you have any questions or concerns about this Privacy Policy, please contact us:</p>
+                <div class="bg-slate-50 rounded-xl p-4 text-sm">
+                    <p><strong>Developer:</strong> Liz Media</p>
+                    <p><strong>App:</strong> LizSpeedTest</p>
+                    <p><strong>Package:</strong> <code class="bg-white px-1 rounded">io.vicp.pomok.liz.speed</code></p>
+                    <p><strong>Email:</strong> <a href="mailto:lizmediaapp@gmail.com" class="text-primary underline">lizmediaapp@gmail.com</a></p>
+                    <p><strong>Website:</strong> <a href="https://lizmediaapp.github.io/speed/" target="_blank" class="text-primary underline">https://lizmediaapp.github.io/speed/</a></p>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-16 pt-8 border-t border-slate-200 text-center text-sm text-text-muted">
+            <p>© 2026 Liz Media. All rights reserved.</p>
+            <div class="flex justify-center gap-6 mt-3">
+                <a href="./privacy.html" class="text-primary hover:underline">Privacy Policy</a>
+                <a href="./terms.html" class="text-primary hover:underline">Terms of Service</a>
+                <a href="./" class="hover:underline">Back to LizSpeedTest</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
