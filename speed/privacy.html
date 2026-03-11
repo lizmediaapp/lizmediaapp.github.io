@@ -29,7 +29,7 @@
         </div>
 
         <h1 class="text-4xl md:text-5xl font-black text-primary mb-4">Privacy Policy</h1>
-        <p class="text-sm text-text-muted mb-2">Last updated: March 11, 2026</p>
+        <p class="text-sm text-text-muted mb-2">Last updated: March 12, 2026</p>
         <p class="text-sm text-text-muted mb-10">Package: <code class="bg-slate-100 px-1 rounded">io.vicp.pomok.liz.speed</code></p>
 
         <div class="space-y-10 text-text-muted text-[15px] leading-relaxed">
@@ -53,14 +53,18 @@
                 <h2 class="text-2xl font-black text-slate-800 mb-3">2. Information We Collect</h2>
 
                 <h3 class="text-lg font-bold text-slate-700 mt-4 mb-2">2.1 Information Stored Locally on Your Device</h3>
-                <p class="mb-3">The following data is stored exclusively on your device and is <strong>never transmitted to our servers</strong>:</p>
+                <p class="mb-3">The following data is stored in your device's local app storage (Room database / DataStore) and is <strong>never transmitted to our servers</strong>:</p>
                 <ul class="list-disc list-inside space-y-2 ml-4">
-                    <li><strong>Speed Test Results:</strong> Download speed, upload speed, ping (latency), jitter, and packet loss recorded from each test. Up to 300 results are stored locally.</li>
+                    <li><strong>Speed Test Results:</strong> Download speed, upload speed, ping (latency), jitter, and packet loss recorded from each test. Free users store up to <strong>20</strong> results; Pro subscribers store up to <strong>300</strong> results. The oldest record is removed automatically when the limit is reached.</li>
                     <li><strong>Server Information:</strong> The test server name and city used for each test.</li>
-                    <li><strong>Network Metadata:</strong> Your public IP address and ISP name as returned by the speed test server at the time of the test. This is stored locally only and is not collected by us.</li>
+                    <li><strong>Network Metadata:</strong> Your public IP address and ISP name as returned by the speed test server at the time of the test. Stored locally only; not collected by us.</li>
+                    <li><strong>Wi-Fi Network Metadata:</strong> When you are connected via Wi-Fi at the time of a test, the app reads and stores your <strong>Wi-Fi SSID</strong> (network name), <strong>frequency band</strong> (2.4 / 5 / 6 GHz), <strong>signal strength (RSSI in dBm)</strong>, and <strong>channel number</strong> alongside the test result. This data is stored exclusively on your device and is included in CSV exports. Wi-Fi SSID may be considered sensitive as it can be associated with a home or workplace network.</li>
                     <li><strong>Test Timestamps:</strong> Date and time of each completed speed test.</li>
                     <li><strong>App Preferences:</strong> Your chosen language, speed units, connection mode (single/multi-thread), speed scale, and history save toggle — stored locally via Android DataStore.</li>
                 </ul>
+                <div class="mt-3 text-sm bg-amber-50 border border-amber-200 rounded-lg p-3">
+                    <strong>Android Auto Backup Notice:</strong> Android may automatically back up app data — including locally stored test history (which contains Wi-Fi SSID and network metadata) — to your personal Google Drive account if Auto Backup is enabled on your device. This backup is associated with your Google account and is governed by <a href="https://policies.google.com/privacy" target="_blank" class="text-primary underline">Google's Privacy Policy</a>. You can disable Auto Backup for this app in <strong>Settings &rarr; Google &rarr; Backup</strong>. We are working to exclude the test history database from Auto Backup in a future app update.
+                </div>
 
                 <h3 class="text-lg font-bold text-slate-700 mt-6 mb-2">2.2 Information Transmitted During Speed Testing</h3>
                 <p class="mb-3">
@@ -73,11 +77,16 @@
                     <li><strong>Server Configuration Request:</strong> The app fetches the list of available test servers and your approximate geographic location (derived from your IP) from the speed test service's public API.</li>
                 </ul>
 
-                <h3 class="text-lg font-bold text-slate-700 mt-6 mb-2">2.3 Information We Do NOT Collect</h3>
+                <h3 class="text-lg font-bold text-slate-700 mt-6 mb-2">2.3 Background Automated Speed Tests</h3>
+                <p class="mb-3">
+                    If you enable the <strong>Auto Test</strong> feature in Settings, the app uses Android WorkManager to run speed tests automatically in the background on a schedule. The app also registers a <strong>RECEIVE_BOOT_COMPLETED</strong> broadcast to reschedule background tests after a device reboot. Each background test collects and stores the same data as a manual test (see Section 2.1), including Wi-Fi network metadata if connected via Wi-Fi. Background tests may send push notifications with the result; you can revoke notification permission at any time in your device's <strong>Settings &rarr; Apps &rarr; LizSpeedTest &rarr; Notifications</strong>.
+                </p>
+
+                <h3 class="text-lg font-bold text-slate-700 mt-6 mb-2">2.4 Information We Do NOT Collect</h3>
                 <ul class="list-disc list-inside space-y-2 ml-4">
                     <li>We do <strong>not</strong> collect your name, email address, phone number, or any account information.</li>
-                    <li>We do <strong>not</strong> access your location, contacts, camera, microphone, or files.</li>
-                    <li>We do <strong>not</strong> track you across apps or websites for targeted advertising.</li>
+                    <li>We do <strong>not</strong> access your precise or coarse GPS location, contacts, camera, microphone, or files.</li>
+                    <li>We do <strong>not</strong> track you across apps or websites for advertising or profiling.</li>
                     <li>We do <strong>not</strong> sell your personal data to any third party.</li>
                     <li>We do <strong>not</strong> share your personal data with third parties except as described in Section 7 (Third-Party Services) below.</li>
                 </ul>
@@ -86,41 +95,56 @@
             <!-- 3 -->
             <section>
                 <h2 class="text-2xl font-black text-slate-800 mb-3">3. Permissions Used</h2>
-                <p class="mb-3">LizSpeedTest requests the following Android permissions, all of which are strictly necessary:</p>
+                <p class="mb-3">LizSpeedTest declares the following Android permissions:</p>
                 <div class="overflow-x-auto">
                     <table class="w-full text-sm border-collapse">
                         <thead>
                             <tr class="bg-slate-50">
                                 <th class="text-left p-3 border border-slate-200 font-bold text-slate-700">Permission</th>
+                                <th class="text-left p-3 border border-slate-200 font-bold text-slate-700">Type</th>
                                 <th class="text-left p-3 border border-slate-200 font-bold text-slate-700">Purpose</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td class="p-3 border border-slate-200 font-mono text-xs">INTERNET</td>
+                                <td class="p-3 border border-slate-200 text-xs">Normal</td>
                                 <td class="p-3 border border-slate-200">Required to connect to speed test servers and perform download/upload speed measurements.</td>
                             </tr>
                             <tr class="bg-slate-50">
                                 <td class="p-3 border border-slate-200 font-mono text-xs">ACCESS_NETWORK_STATE</td>
+                                <td class="p-3 border border-slate-200 text-xs">Normal</td>
                                 <td class="p-3 border border-slate-200">Checks whether a network connection is available before initiating a test.</td>
                             </tr>
                             <tr>
                                 <td class="p-3 border border-slate-200 font-mono text-xs">ACCESS_WIFI_STATE</td>
-                                <td class="p-3 border border-slate-200">Detects whether you are connected via Wi-Fi or mobile data, displayed as informational context.</td>
+                                <td class="p-3 border border-slate-200 text-xs">Normal</td>
+                                <td class="p-3 border border-slate-200">Reads Wi-Fi connection details — including <strong>SSID</strong>, <strong>frequency band</strong> (2.4 / 5 / 6 GHz), <strong>signal strength (RSSI)</strong>, and <strong>channel number</strong> — to record Wi-Fi network metadata alongside each speed test result and to display connection type context in the UI.</td>
+                            </tr>
+                            <tr class="bg-slate-50">
+                                <td class="p-3 border border-slate-200 font-mono text-xs">POST_NOTIFICATIONS</td>
+                                <td class="p-3 border border-slate-200 text-xs text-red-600 font-semibold">Dangerous (Android 13+)</td>
+                                <td class="p-3 border border-slate-200">Sends push notifications to deliver background auto-test results. Requested at runtime on Android 13 and above; you can deny or revoke this permission at any time without affecting core speed test functionality.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-3 border border-slate-200 font-mono text-xs">RECEIVE_BOOT_COMPLETED</td>
+                                <td class="p-3 border border-slate-200 text-xs">Normal</td>
+                                <td class="p-3 border border-slate-200">Allows the app to reschedule background auto-test jobs via WorkManager after the device is rebooted, so that previously configured automatic tests resume without requiring you to reopen the app.</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <p class="mt-3 text-sm">No dangerous permissions (location, contacts, storage, camera, microphone) are requested.</p>
+                <p class="mt-3 text-sm">The app does not request location, contacts, storage, camera, or microphone permissions. <code class="bg-slate-100 px-1 rounded">POST_NOTIFICATIONS</code> is the only dangerous permission and is optional — its sole purpose is delivering background test result notifications.</p>
             </section>
 
             <!-- 4 -->
             <section>
                 <h2 class="text-2xl font-black text-slate-800 mb-3">4. Data Retention and Deletion</h2>
                 <ul class="list-disc list-inside space-y-2 ml-4">
-                    <li><strong>Test History:</strong> Stored locally on your device. The app automatically retains up to 300 records and removes the oldest when this limit is exceeded. You may manually delete individual records or clear all history at any time in the History screen.</li>
-                    <li><strong>App Preferences:</strong> Stored locally and cleared when you uninstall the app.</li>
-                    <li><strong>No server-side data:</strong> Since we collect no data on our servers, there is nothing to request deletion of from us.</li>
+                    <li><strong>Test History:</strong> Stored locally in a Room database on your device. Free users retain up to <strong>20</strong> records; Pro subscribers retain up to <strong>300</strong> records. The oldest record is removed automatically when the limit is reached. You may manually delete individual records or clear all history at any time in the History screen.</li>
+                    <li><strong>App Preferences:</strong> Stored locally via Android DataStore and cleared when you uninstall the app.</li>
+                    <li><strong>Android Auto Backup:</strong> Android may back up the local database to your Google Drive (see Section 2.1 notice). You can disable this in your device's backup settings.</li>
+                    <li><strong>No server-side data:</strong> We do not operate a server that stores your personal data; there is nothing to request server-side deletion of from us.</li>
                 </ul>
             </section>
 
@@ -174,12 +198,21 @@
                 </ul>
                 <p class="mb-2">Crash data is sent to Google and governed by <a href="https://policies.google.com/privacy" target="_blank" class="text-primary underline">Google's Privacy Policy</a>. This data is used solely to identify and fix bugs.</p>
 
-                <h3 class="text-lg font-bold text-slate-700 mt-4 mb-2">7.4 Advertising</h3>
+                <h3 class="text-lg font-bold text-slate-700 mt-4 mb-2">7.4 Performance Monitoring (Firebase Performance)</h3>
+                <p class="mb-3">
+                    We use <strong>Firebase Performance Monitoring</strong> to collect anonymous performance metrics that help us identify and resolve performance bottlenecks. Performance Monitoring may collect:
+                </p>
+                <ul class="list-disc list-inside space-y-1 ml-4 mb-3">
+                    <li>Network request durations and response sizes (no request body or personal content)</li>
+                    <li>Screen rendering performance (frame rates, slow/frozen frames)</li>
+                    <li>App startup time and custom trace durations</li>
+                    <li>Device model, OS version, and app version</li>
+                </ul>
+                <p class="mb-2">Performance data is sent to Google and governed by <a href="https://policies.google.com/privacy" target="_blank" class="text-primary underline">Google's Privacy Policy</a>. None of this data is linked to identifiable users.</p>
+
+                <h3 class="text-lg font-bold text-slate-700 mt-4 mb-2">7.5 Advertising</h3>
                 <p>
-                    The App may display advertisements provided by third-party ad networks. These networks may use cookies,
-                    device identifiers, or similar technologies to serve relevant ads. Ad networks operate under their own
-                    privacy policies. We do not share personally identifiable information with ad networks. You may opt out
-                    of personalized advertising in your device settings (Settings → Google → Ads → Opt out of Ads Personalization).
+                    <strong>The current version of LizSpeedTest does not display any advertisements.</strong> The app contains no advertising SDK and no ad-related data is collected or shared. If advertising is introduced in a future version, this policy will be updated accordingly before that version is released.
                 </p>
             </section>
 
@@ -194,7 +227,7 @@
                     <li><strong>Right to Correction / Rectification:</strong> If you believe any locally stored data is inaccurate, you may delete the incorrect record and re-run the test. We do not maintain server-side records on your behalf.</li>
                     <li><strong>Right to Deletion:</strong> You may delete individual test results, clear all history, or uninstall the app to remove all locally stored data at any time.</li>
                     <li><strong>Right to Opt-Out of History Saving:</strong> You may disable test history recording at any time in <strong>Settings &rarr; Save History</strong>.</li>
-                    <li><strong>Right to Opt-Out of Personalized Advertising:</strong> You may opt out of personalized advertising via your device's <strong>Settings &rarr; Google &rarr; Ads &rarr; Opt out of Ads Personalization</strong>. On Android 12+, go to <strong>Settings &rarr; Privacy &rarr; Ads &rarr; Delete advertising ID</strong>.</li>
+                    <li><strong>Right to Opt-Out of Background Testing:</strong> You may disable background automated tests at any time in the app's <strong>Settings &rarr; Auto Test</strong>. You may also revoke the notification permission in <strong>Settings &rarr; Apps &rarr; LizSpeedTest &rarr; Notifications</strong> to stop receiving background test result alerts.</li>
                     <li><strong>Right to Know Data Sharing:</strong> You have the right to know what personal data is shared and with whom. See Section 7 (Third-Party Services) and Section 10 (Google Play Data Safety) for a complete description. We do <strong>not</strong> sell your personal data.</li>
                     <li><strong>Right to Opt-Out of Analytics:</strong> You may request to opt out of Firebase Analytics data collection by contacting us at <a href="mailto:lizmediaapp@gmail.com" class="text-primary underline">lizmediaapp@gmail.com</a>.</li>
                     <li><strong>Right to Lodge a Complaint:</strong> You have the right to lodge a complaint with your local data protection supervisory authority if you believe your privacy rights have been violated.</li>
@@ -275,10 +308,15 @@
                             </tr>
                             <tr class="bg-slate-50">
                                 <td class="p-3 border border-slate-200">Storing speed test results locally</td>
-                                <td class="p-3 border border-slate-200">Speed results, timestamps, server info, IP / ISP</td>
-                                <td class="p-3 border border-slate-200"><strong>Consent</strong> &mdash; you can disable history saving in Settings &rarr; Save History at any time</td>
+                                <td class="p-3 border border-slate-200">Speed results, timestamps, server info, IP / ISP, Wi-Fi SSID / band / RSSI / channel</td>
+                                <td class="p-3 border border-slate-200"><strong>Consent</strong> &mdash; you can disable history saving in Settings &rarr; Save History at any time; Wi-Fi metadata is collected only when connected via Wi-Fi</td>
                             </tr>
                             <tr>
+                                <td class="p-3 border border-slate-200">Background automated speed tests (WorkManager)</td>
+                                <td class="p-3 border border-slate-200">Same data as manual tests; notifications delivered via POST_NOTIFICATIONS</td>
+                                <td class="p-3 border border-slate-200"><strong>Consent</strong> &mdash; auto-test scheduling is opt-in; you can disable it in Settings &rarr; Auto Test at any time</td>
+                            </tr>
+                            <tr class="bg-slate-50">
                                 <td class="p-3 border border-slate-200">Anonymous usage analytics (Firebase Analytics)</td>
                                 <td class="p-3 border border-slate-200">Anonymous app events, device model, OS version</td>
                                 <td class="p-3 border border-slate-200"><strong>Legitimate interests</strong> &mdash; understanding aggregate usage patterns to improve the app; data is anonymized and not linked to an individual</td>
@@ -289,9 +327,9 @@
                                 <td class="p-3 border border-slate-200"><strong>Legitimate interests</strong> &mdash; identifying and fixing software defects to ensure app stability and security</td>
                             </tr>
                             <tr>
-                                <td class="p-3 border border-slate-200">Displaying advertisements</td>
-                                <td class="p-3 border border-slate-200">Anonymous device identifiers (managed by ad networks)</td>
-                                <td class="p-3 border border-slate-200"><strong>Legitimate interests / Consent</strong> &mdash; advertising revenue supports the free app; you may opt out of personalized ads via device settings</td>
+                                <td class="p-3 border border-slate-200">Performance monitoring (Firebase Performance)</td>
+                                <td class="p-3 border border-slate-200">Network request durations, rendering performance, anonymous device info</td>
+                                <td class="p-3 border border-slate-200"><strong>Legitimate interests</strong> &mdash; identifying and resolving performance bottlenecks; data is anonymous and not linked to individuals</td>
                             </tr>
                         </tbody>
                     </table>
@@ -320,12 +358,18 @@
                                 <td class="p-3 border border-slate-200">Not collected</td>
                             </tr>
                             <tr class="bg-slate-50">
-                                <td class="p-3 border border-slate-200">Network performance data</td>
+                                <td class="p-3 border border-slate-200">Network performance data (speed, ping, jitter)</td>
                                 <td class="p-3 border border-slate-200">Yes</td>
                                 <td class="p-3 border border-slate-200">No</td>
-                                <td class="p-3 border border-slate-200">Stored locally only; user-initiated deletion</td>
+                                <td class="p-3 border border-slate-200">Stored locally only; free: max 20 records, Pro: max 300; user-initiated deletion available</td>
                             </tr>
                             <tr>
+                                <td class="p-3 border border-slate-200">Wi-Fi network data (SSID, band, RSSI, channel)</td>
+                                <td class="p-3 border border-slate-200">Yes</td>
+                                <td class="p-3 border border-slate-200">No</td>
+                                <td class="p-3 border border-slate-200">Stored locally alongside test results; included in CSV export; only collected when connected via Wi-Fi</td>
+                            </tr>
+                            <tr class="bg-slate-50">
                                 <td class="p-3 border border-slate-200">IP address / ISP</td>
                                 <td class="p-3 border border-slate-200">Yes</td>
                                 <td class="p-3 border border-slate-200">Speed test servers only</td>
