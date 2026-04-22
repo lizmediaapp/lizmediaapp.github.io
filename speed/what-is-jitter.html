@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Is Jitter? LizSpeedTest Guide</title>
+  <meta
+    name="description"
+    content="Learn what jitter means in a speed test, why high jitter causes unstable calls and gaming lag, and how to troubleshoot inconsistent latency."
+  />
+  <meta property="og:title" content="What Is Jitter? LizSpeedTest Guide" />
+  <meta
+    property="og:description"
+    content="Understand jitter, why unstable latency matters, and how to improve connection consistency for calls, gaming, and streaming."
+  />
+  <meta property="og:url" content="https://lizmediaapp.github.io/speed/what-is-jitter.html" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://lizmediaapp.github.io/speed/what-is-jitter.html" />
+  <link rel="icon" type="image/x-icon" href="./image/icon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#f7911d',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+  <header class="border-b border-slate-200 bg-white py-4 px-6">
+    <div class="mx-auto flex max-w-5xl items-center justify-between gap-4">
+      <a href="./" class="flex items-center gap-3">
+        <img src="./image/icon.ico" alt="LizSpeedTest" class="h-10 w-10 rounded-lg" />
+        <span class="text-xl font-bold text-slate-900">LizSpeedTest</span>
+      </a>
+      <a href="./help.html" class="rounded-lg bg-orange-50 px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-orange-100">
+        Help Center
+      </a>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-5xl px-6 py-12">
+    <div class="max-w-3xl">
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Jitter Guide</p>
+      <h1 class="mt-4 text-4xl font-extrabold text-slate-900">What is jitter in an internet speed test?</h1>
+      <p class="mt-4 text-lg leading-8 text-slate-600">
+        Jitter measures how much your latency changes from moment to moment. Even if average ping looks acceptable, high jitter can make a connection feel unstable and inconsistent.
+      </p>
+    </div>
+
+    <section class="mt-10 grid gap-6 md:grid-cols-3">
+      <div class="rounded-2xl border border-slate-200 bg-white p-6">
+        <h2 class="text-lg font-bold text-slate-900">Low jitter</h2>
+        <p class="mt-3 text-sm leading-7 text-slate-600">A stable connection where latency stays close to the same value over time.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 bg-white p-6">
+        <h2 class="text-lg font-bold text-slate-900">High jitter</h2>
+        <p class="mt-3 text-sm leading-7 text-slate-600">Latency keeps jumping around, which can make calls crackle and games feel uneven.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 bg-white p-6">
+        <h2 class="text-lg font-bold text-slate-900">What it affects</h2>
+        <p class="mt-3 text-sm leading-7 text-slate-600">Voice calls, video calls, online gaming, live streams, and any service that depends on smooth real-time data.</p>
+      </div>
+    </section>
+
+    <section class="mt-12 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
+      <h2 class="text-3xl font-extrabold text-slate-900">What counts as good jitter?</h2>
+      <div class="mt-6 overflow-hidden rounded-2xl border border-slate-200">
+        <table class="w-full border-collapse text-sm">
+          <thead class="bg-slate-50">
+            <tr>
+              <th class="p-4 text-left font-bold text-slate-700">Jitter Range</th>
+              <th class="p-4 text-left font-bold text-slate-700">General Meaning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-slate-200">
+              <td class="p-4 font-medium text-slate-900">Below 10 ms</td>
+              <td class="p-4 text-slate-600">Usually excellent for real-time communication and online gaming.</td>
+            </tr>
+            <tr class="border-t border-slate-200 bg-slate-50">
+              <td class="p-4 font-medium text-slate-900">10 to 20 ms</td>
+              <td class="p-4 text-slate-600">Often still usable, but some instability may be noticeable.</td>
+            </tr>
+            <tr class="border-t border-slate-200">
+              <td class="p-4 font-medium text-slate-900">Above 20 ms</td>
+              <td class="p-4 text-slate-600">May cause visible call quality issues, lag spikes, or uneven responsiveness.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="mt-12 grid gap-6 md:grid-cols-2">
+      <article class="rounded-2xl border border-slate-200 bg-white p-7">
+        <h2 class="text-2xl font-bold text-slate-900">What causes jitter?</h2>
+        <ul class="mt-4 list-disc space-y-2 pl-5 text-sm leading-7 text-slate-600">
+          <li>Congested Wi-Fi or mobile network conditions</li>
+          <li>Interference, weak signal, or unstable router performance</li>
+          <li>Background traffic competing for bandwidth</li>
+          <li>Unstable ISP routing or overloaded servers</li>
+        </ul>
+      </article>
+      <article class="rounded-2xl border border-slate-200 bg-white p-7">
+        <h2 class="text-2xl font-bold text-slate-900">How to improve jitter</h2>
+        <ul class="mt-4 list-disc space-y-2 pl-5 text-sm leading-7 text-slate-600">
+          <li>Move closer to the router or reduce interference sources</li>
+          <li>Use Ethernet if possible</li>
+          <li>Limit heavy streaming, downloads, and uploads during tests</li>
+          <li>Repeat tests over time to see whether instability is persistent</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="mt-12 rounded-3xl bg-slate-900 px-8 py-10 text-white">
+      <h2 class="text-3xl font-extrabold">Measure jitter with context</h2>
+      <p class="mt-4 max-w-3xl text-sm leading-7 text-slate-300">
+        LizSpeedTest measures jitter alongside ping, download speed, upload speed, and packet loss so you can tell whether a connection problem is caused by instability instead of raw bandwidth.
+      </p>
+      <div class="mt-6">
+        <a href="https://play.google.com/store/apps/details?id=io.vicp.pomok.liz.speed" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-xl bg-primary px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-orange-500">
+          Download on Google Play
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white py-8 px-6">
+    <div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 text-sm text-slate-500 sm:flex-row">
+      <p>&copy; 2026 Liz Media. All rights reserved.</p>
+      <nav class="flex gap-6">
+        <a href="./help.html" class="hover:text-primary">Help Center</a>
+        <a href="./privacy.html" class="hover:text-primary">Privacy Policy</a>
+        <a href="./terms.html" class="hover:text-primary">Terms of Service</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
