@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jitter vs Ping: What's the Difference? LizSpeedTest Guide</title>
+  <meta
+    name="description"
+    content="Learn the difference between jitter and ping, why both matter in speed tests, and how they affect gaming, calls, and internet responsiveness."
+  />
+  <meta property="og:title" content="Jitter vs Ping: What's the Difference? LizSpeedTest Guide" />
+  <meta
+    property="og:description"
+    content="Understand how ping measures latency while jitter measures instability, and why both are important for connection quality."
+  />
+  <meta property="og:url" content="https://lizmediaapp.github.io/speed/jitter-vs-ping.html" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://lizmediaapp.github.io/speed/jitter-vs-ping.html" />
+  <link rel="icon" type="image/x-icon" href="./image/icon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#f7911d',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+  <header class="border-b border-slate-200 bg-white py-4 px-6">
+    <div class="mx-auto flex max-w-5xl items-center justify-between gap-4">
+      <a href="./" class="flex items-center gap-3">
+        <img src="./image/icon.ico" alt="LizSpeedTest" class="h-10 w-10 rounded-lg" />
+        <span class="text-xl font-bold text-slate-900">LizSpeedTest</span>
+      </a>
+      <a href="./what-is-ping.html" class="rounded-lg bg-orange-50 px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-orange-100">
+        Ping Guide
+      </a>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-5xl px-6 py-12">
+    <div class="max-w-3xl">
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Network Quality</p>
+      <h1 class="mt-4 text-4xl font-extrabold text-slate-900">Jitter vs ping: what is the difference?</h1>
+      <p class="mt-4 text-lg leading-8 text-slate-600">
+        Ping and jitter are related, but they are not the same. Ping measures how long a response takes. Jitter measures how much that response time changes over time.
+      </p>
+    </div>
+
+    <section class="mt-10 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
+      <h2 class="text-3xl font-extrabold text-slate-900">Simple comparison</h2>
+      <div class="mt-6 overflow-hidden rounded-2xl border border-slate-200">
+        <table class="w-full border-collapse text-sm">
+          <thead class="bg-slate-50">
+            <tr>
+              <th class="p-4 text-left font-bold text-slate-700">Metric</th>
+              <th class="p-4 text-left font-bold text-slate-700">What it tells you</th>
+              <th class="p-4 text-left font-bold text-slate-700">Why it matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-slate-200">
+              <td class="p-4 font-medium text-slate-900">Ping</td>
+              <td class="p-4 text-slate-600">Average latency or response time</td>
+              <td class="p-4 text-slate-600">Affects responsiveness and delay</td>
+            </tr>
+            <tr class="border-t border-slate-200 bg-slate-50">
+              <td class="p-4 font-medium text-slate-900">Jitter</td>
+              <td class="p-4 text-slate-600">How much latency changes from moment to moment</td>
+              <td class="p-4 text-slate-600">Affects stability and smoothness</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="mt-12 grid gap-6 md:grid-cols-2">
+      <article class="rounded-2xl border border-slate-200 bg-white p-7">
+        <h2 class="text-2xl font-bold text-slate-900">When ping is fine but jitter is bad</h2>
+        <p class="mt-4 text-sm leading-7 text-slate-600">
+          You can have an acceptable average ping but still experience poor calls or uneven gaming if the latency keeps jumping up and down. That is why jitter matters.
+        </p>
+      </article>
+      <article class="rounded-2xl border border-slate-200 bg-white p-7">
+        <h2 class="text-2xl font-bold text-slate-900">When both are bad</h2>
+        <p class="mt-4 text-sm leading-7 text-slate-600">
+          High ping plus high jitter usually means the connection is both slow to respond and unstable. That often points to congestion, poor Wi-Fi conditions, or routing issues.
+        </p>
+      </article>
+    </section>
+
+    <section class="mt-12 rounded-3xl bg-slate-900 px-8 py-10 text-white">
+      <h2 class="text-3xl font-extrabold">Measure both together</h2>
+      <p class="mt-4 max-w-3xl text-sm leading-7 text-slate-300">
+        LizSpeedTest helps you measure ping, jitter, packet loss, download speed, and upload speed in one place so you can understand both delay and stability before changing your setup.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="https://play.google.com/store/apps/details?id=io.vicp.pomok.liz.speed" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-xl bg-primary px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-orange-500">
+          Download LizSpeedTest on Google Play
+        </a>
+        <a href="./what-is-jitter.html" class="inline-flex rounded-xl border border-white/15 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/5">
+          Read what jitter means
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white py-8 px-6">
+    <div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 text-sm text-slate-500 sm:flex-row">
+      <p>&copy; 2026 Liz Media. All rights reserved.</p>
+      <nav class="flex gap-6">
+        <a href="./what-is-ping.html" class="hover:text-primary">What Is Ping</a>
+        <a href="./help.html" class="hover:text-primary">Help Center</a>
+        <a href="./privacy.html" class="hover:text-primary">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
