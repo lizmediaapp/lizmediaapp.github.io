@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Is My Ping So High? LizSpeedTest Guide</title>
+  <meta
+    name="description"
+    content="Learn why your ping is high, what usually causes latency spikes on Wi-Fi or mobile data, and how to troubleshoot high ping before changing providers."
+  />
+  <meta property="og:title" content="Why Is My Ping So High? LizSpeedTest Guide" />
+  <meta
+    property="og:description"
+    content="Understand the common causes of high ping, how it feels in games and calls, and what to test next."
+  />
+  <meta property="og:url" content="https://lizmediaapp.github.io/speed/why-is-my-ping-so-high.html" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://lizmediaapp.github.io/speed/why-is-my-ping-so-high.html" />
+  <link rel="icon" type="image/x-icon" href="./image/icon.ico" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#f7911d',
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+  <header class="border-b border-slate-200 bg-white py-4 px-6">
+    <div class="mx-auto flex max-w-5xl items-center justify-between gap-4">
+      <a href="./" class="flex items-center gap-3">
+        <img src="./image/icon.ico" alt="LizSpeedTest" class="h-10 w-10 rounded-lg" />
+        <span class="text-xl font-bold text-slate-900">LizSpeedTest</span>
+      </a>
+      <a href="./guides.html" class="rounded-lg bg-orange-50 px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-orange-100">
+        All Guides
+      </a>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-5xl px-6 py-12">
+    <div class="max-w-3xl">
+      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Ping Guide</p>
+      <h1 class="mt-4 text-4xl font-extrabold text-slate-900">Why is my ping so high?</h1>
+      <p class="mt-4 text-lg leading-8 text-slate-600">
+        High ping means it takes longer for your device to get a response from a server. That delay can show up as slow game reactions, delayed voice chat, laggy remote desktop sessions, or sluggish web apps.
+      </p>
+    </div>
+
+    <section class="mt-10 grid gap-6 md:grid-cols-3">
+      <div class="rounded-2xl border border-slate-200 bg-white p-6">
+        <h2 class="text-lg font-bold text-slate-900">What it feels like</h2>
+        <p class="mt-3 text-sm leading-7 text-slate-600">Delayed actions, rubber banding, awkward video calls, and slow response in interactive apps.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 bg-white p-6">
+        <h2 class="text-lg font-bold text-slate-900">What it is not</h2>
+        <p class="mt-3 text-sm leading-7 text-slate-600">High ping is not always the same as low download speed. A connection can be fast on Mbps and still feel laggy.</p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 bg-white p-6">
+        <h2 class="text-lg font-bold text-slate-900">What to compare</h2>
+        <p class="mt-3 text-sm leading-7 text-slate-600">Look at ping together with jitter and packet loss so you can tell whether the problem is delay, instability, or dropped data.</p>
+      </div>
+    </section>
+
+    <section class="mt-12 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
+      <h2 class="text-3xl font-extrabold text-slate-900">Common causes of high ping</h2>
+      <div class="mt-6 grid gap-4 md:grid-cols-2">
+        <div class="rounded-2xl bg-slate-50 p-5">
+          <h3 class="font-bold text-slate-900">Busy Wi-Fi or mobile network</h3>
+          <p class="mt-2 text-sm leading-7 text-slate-600">Network congestion can increase waiting time even when bandwidth still looks usable.</p>
+        </div>
+        <div class="rounded-2xl bg-slate-50 p-5">
+          <h3 class="font-bold text-slate-900">Distance and interference</h3>
+          <p class="mt-2 text-sm leading-7 text-slate-600">Weak Wi-Fi signal, walls, or interference often add delay and instability together.</p>
+        </div>
+        <div class="rounded-2xl bg-slate-50 p-5">
+          <h3 class="font-bold text-slate-900">Background traffic</h3>
+          <p class="mt-2 text-sm leading-7 text-slate-600">Cloud sync, streaming, downloads, and uploads can increase latency while they compete for network resources.</p>
+        </div>
+        <div class="rounded-2xl bg-slate-50 p-5">
+          <h3 class="font-bold text-slate-900">Server distance or routing</h3>
+          <p class="mt-2 text-sm leading-7 text-slate-600">Sometimes the issue is not inside your home. The server may be far away or the route may be inefficient.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-12 grid gap-6 md:grid-cols-2">
+      <article class="rounded-2xl border border-slate-200 bg-white p-7">
+        <h2 class="text-2xl font-bold text-slate-900">Quick checks that usually help</h2>
+        <ol class="mt-4 list-decimal space-y-2 pl-5 text-sm leading-7 text-slate-600">
+          <li>Run a test close to the router, then in the room where the issue happens.</li>
+          <li>Pause downloads, streaming, cloud backup, and game updates.</li>
+          <li>Try another test server to compare route quality.</li>
+          <li>Repeat the test at another time of day to spot congestion.</li>
+        </ol>
+      </article>
+      <article class="rounded-2xl border border-slate-200 bg-white p-7">
+        <h2 class="text-2xl font-bold text-slate-900">When high ping points outside your home</h2>
+        <p class="mt-4 text-sm leading-7 text-slate-600">
+          If multiple devices show high ping on repeated tests, especially at peak hours or only for certain servers, your ISP route or a service region may be part of the problem.
+        </p>
+      </article>
+    </section>
+
+    <section class="mt-12 rounded-3xl bg-slate-900 px-8 py-10 text-white">
+      <h2 class="text-3xl font-extrabold">Use LizSpeedTest to verify the pattern</h2>
+      <p class="mt-4 max-w-3xl text-sm leading-7 text-slate-300">
+        LizSpeedTest helps you compare ping, jitter, packet loss, and bandwidth across repeated tests so you can tell whether the problem is local Wi-Fi, time-of-day congestion, or a broader route issue.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-4">
+        <a href="https://play.google.com/store/apps/details?id=io.vicp.pomok.liz.speed" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-xl bg-primary px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-orange-500">
+          Download on Google Play
+        </a>
+        <a href="./how-to-reduce-ping-for-gaming.html" class="inline-flex rounded-xl border border-white/15 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-white/5">
+          Related: Reduce Ping for Gaming
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white py-8 px-6">
+    <div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 text-sm text-slate-500 sm:flex-row">
+      <p>&copy; 2026 Liz Media. All rights reserved.</p>
+      <nav class="flex gap-6">
+        <a href="./help.html" class="hover:text-primary">Help Center</a>
+        <a href="./privacy.html" class="hover:text-primary">Privacy Policy</a>
+        <a href="./terms.html" class="hover:text-primary">Terms of Service</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
