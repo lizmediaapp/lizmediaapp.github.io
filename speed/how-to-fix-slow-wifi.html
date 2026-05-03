@@ -16,7 +16,9 @@
   <meta property="og:url" content="https://speed.lizmediaapp.com/how-to-fix-slow-wifi.html" />
   <meta property="og:type" content="article" />
   <link rel="canonical" href="https://speed.lizmediaapp.com/how-to-fix-slow-wifi.html" />
-  <link rel="icon" type="image/x-icon" href="./image/icon.ico" />
+  <meta property="og:image" content="%BASE_URL%image/og-cover.svg" />
+  <meta name="twitter:image" content="%BASE_URL%image/og-cover.svg" />
+  <link rel="icon" type="image/x-icon" href="%BASE_URL%image/icon.ico" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -29,12 +31,96 @@
       },
     }
   </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to fix slow Wi-Fi",
+      "description": "Learn practical ways to fix slow Wi-Fi, test your network correctly, and understand whether your issue is bandwidth, latency, jitter, or packet loss.",
+      "image": "https://speed.lizmediaapp.com/image/og-cover.svg",
+      "author": {
+        "@type": "Organization",
+        "name": "LizSpeedTest",
+        "url": "https://speed.lizmediaapp.com"
+      },
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Start with the right test",
+          "text": "Run multiple tests in the same room, near the router, and where the problem usually happens. Compare download speed, upload speed, ping, jitter, and packet loss."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "If download speed is low",
+          "text": "Move closer to the router and test again. Pause large downloads and updates. Restart the router and modem. Compare results on Ethernet if possible."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "If ping or jitter is high",
+          "text": "Reduce background traffic on the network. Use a less congested Wi-Fi band. Test at another time of day to check congestion. Try a different server to compare routing quality."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "If packet loss is present",
+          "text": "Check signal strength and router placement. Restart equipment and test multiple devices. Try Ethernet to isolate Wi-Fi problems. Contact your ISP if loss persists."
+        }
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How To Fix Slow Wi-Fi: LizSpeedTest Guide",
+      "description": "Learn practical ways to fix slow Wi-Fi, test your network correctly, and understand whether your issue is bandwidth, latency, jitter, or packet loss.",
+      "url": "https://speed.lizmediaapp.com/how-to-fix-slow-wifi.html",
+      "image": "https://speed.lizmediaapp.com/image/og-cover.svg",
+      "datePublished": "2026-01-01T00:00:00Z",
+      "dateModified": "2026-05-04T00:00:00Z",
+      "author": {
+        "@type": "Organization",
+        "name": "LizSpeedTest",
+        "url": "https://speed.lizmediaapp.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Liz Media",
+        "url": "https://lizmediaapp.com"
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://speed.lizmediaapp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://speed.lizmediaapp.com/guides.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to fix slow Wi-Fi",
+          "item": "https://speed.lizmediaapp.com/how-to-fix-slow-wifi.html"
+        }
+      ]
+    }
+  </script>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans">
   <header class="border-b border-slate-200 bg-white py-4 px-6">
     <div class="mx-auto flex max-w-5xl items-center justify-between gap-4">
       <a href="./" class="flex items-center gap-3">
-        <img src="./image/icon.ico" alt="LizSpeedTest" class="h-10 w-10 rounded-lg" />
+        <img src="%BASE_URL%image/icon.ico" alt="LizSpeedTest" class="h-10 w-10 rounded-lg" />
         <span class="text-xl font-bold text-slate-900">LizSpeedTest</span>
       </a>
       <a href="./help.html" class="rounded-lg bg-orange-50 px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-orange-100">

@@ -9,7 +9,9 @@
     content="Learn about LizSpeedTest, the Android internet speed test app from Liz Media for measuring download speed, upload speed, ping, jitter, and packet loss."
   />
   <link rel="canonical" href="https://speed.lizmediaapp.com/about.html" />
-  <link rel="icon" type="image/x-icon" href="./image/icon.ico" />
+  <meta property="og:image" content="%BASE_URL%image/og-cover.svg" />
+  <meta name="twitter:image" content="%BASE_URL%image/og-cover.svg" />
+  <link rel="icon" type="image/x-icon" href="%BASE_URL%image/icon.ico" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -22,12 +24,49 @@
       },
     }
   </script>
-</head>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "LizSpeedTest",
+      "url": "https://speed.lizmediaapp.com",
+      "logo": "https://speed.lizmediaapp.com/image/icon.ico",
+      "description": "LizSpeedTest is an Android internet speed test app for measuring download speed, upload speed, ping, jitter, and packet loss.",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=io.vicp.pomok.liz.speed",
+        "https://github.com/lizmediaapp"
+      ],
+      "contact": {
+        "@type": "ContactPoint",
+        "url": "https://speed.lizmediaapp.com/help.html"
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://speed.lizmediaapp.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://speed.lizmediaapp.com/about.html"
+        }
+      ]
+    }
+  </script>
 <body class="bg-white text-slate-800 font-sans">
 
   <header class="border-b border-slate-200 py-4 px-6 flex items-center justify-between">
-    <a href="./" class="flex items-center gap-3">
-      <img src="./image/icon.ico" alt="LizSpeedTest" class="h-10 w-10 rounded-lg" />
+      <a href="./" class="flex items-center gap-3">
+        <img src="%BASE_URL%image/icon.ico" alt="LizSpeedTest" class="h-10 w-10 rounded-lg" />
       <span class="text-xl font-bold text-slate-900">LizSpeedTest</span>
     </a>
     <a href="./" class="inline-flex items-center gap-2 rounded-lg bg-orange-50 px-4 py-2 text-sm font-medium text-primary hover:bg-orange-100 transition-colors">
