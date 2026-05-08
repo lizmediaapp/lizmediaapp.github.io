@@ -48,28 +48,36 @@
             "description": "Read the LizMusic Privacy Policy to understand how local music files, cloud credentials, analytics, crash reporting, and app settings are handled."
         }
     </script>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
+    <style>body{font-family:'Plus Jakarta Sans',sans-serif;}</style></head>
 <body class="min-h-screen bg-slate-50 text-slate-800">
-    <header class="border-b border-slate-200 bg-white py-4 px-6">
-        <div class="mx-auto flex max-w-5xl items-center justify-between gap-4">
-            <a href="/" class="flex items-center gap-3">
-                <img src="/image/lizmusic-logo.png" alt="LizMusic" class="h-10 w-10 rounded-lg">
-                <span class="text-xl font-bold text-slate-900">LizMusic</span>
-            </a>
-            <a href="/" class="rounded-lg bg-orange-50 px-4 py-2 text-sm font-medium text-brand-chestnut transition-colors hover:bg-orange-100">
-                Back to Home
-            </a>
-        </div>
-    </header>
-    <main class="max-w-4xl mx-auto px-6 py-8">
-        <h1 class="text-4xl md:text-5xl font-black text-brand-chestnut mb-8">Privacy Policy</h1>
+    <header class="fixed left-0 right-0 top-5 z-40 px-4 sm:px-6">
+  <div class="mx-auto flex h-[86px] max-w-[1400px] items-center justify-between rounded-[2rem] border border-[#efe3d7] bg-white/94 px-6 shadow-[0_22px_60px_-38px_rgba(106,74,47,0.35)] backdrop-blur-xl sm:px-8 lg:px-10">
+    <a href="/" class="flex items-center gap-3 transition-opacity hover:opacity-90">
+      <img src="/image/lizmusic-logo.png" alt="LizMusic" class="h-12 w-12 rounded-2xl object-contain">
+      <span class="text-[2rem] font-extrabold tracking-[-0.05em] text-[#141414]">LizMusic</span>
+    </a>
+    <nav class="hidden items-center gap-10 lg:flex">
+      <a href="/" class="text-[1.05rem] font-medium text-[#1c1c1c] transition-colors hover:text-brand-chestnut">Home</a>
+      <a href="/features.html" class="text-[1.05rem] font-medium text-[#1c1c1c] transition-colors hover:text-brand-chestnut">Features</a>
+      <a href="/privacy-plain.html" class="text-[1.05rem] font-medium text-[#1c1c1c] transition-colors hover:text-brand-chestnut">Privacy</a>
+      <a href="/terms-plain.html" class="text-[1.05rem] font-medium text-[#1c1c1c] transition-colors hover:text-brand-chestnut">Terms</a>
+    </nav>
+    <a href="https://play.google.com/store/apps/details?id=io.vicp.pomok.liz.music" target="_blank" rel="noopener noreferrer" class="inline-flex min-w-[148px] items-center justify-center rounded-[1.1rem] bg-[#f47c20] px-6 py-4 text-base font-bold text-white shadow-[0_16px_32px_-22px_rgba(244,124,32,0.8)] transition-transform hover:-translate-y-0.5">Get App</a>
+  </div>
+</header>
+    <main class="max-w-4xl mx-auto px-6 pt-40 pb-12">
+        <h1 class="mb-8 text-[2.85rem] font-extrabold leading-[1.02] tracking-[-0.06em] text-brand-chestnut">Privacy Policy</h1>
         <p class="text-sm text-text-muted mb-8">Last updated: March 11, 2026</p>
         <p class="text-sm text-text-muted mb-8 font-semibold">Version 1.0.4</p>
 
-        <div class="space-y-8 text-text-muted">
+        <div class="space-y-10 text-[0.98rem] leading-8 text-text-muted">
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">1. Introduction</h2>
-                <p class="leading-relaxed mb-4">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">1. Introduction</h2>
+                <p class="mb-4 text-[0.98rem] leading-8">
                     Welcome to LizMusic. We respect your privacy and are committed to protecting your personal data.
                     This privacy policy will inform you about how we handle your data when you use our music player application.
                 </p>
@@ -80,10 +88,10 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">2. Data We Collect and Access</h2>
-                <p class="leading-relaxed mb-3">When you use LizMusic, we may access or collect the following information:</p>
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">2. Data We Collect and Access</h2>
+                <p class="mb-3 text-[0.98rem] leading-8">When you use LizMusic, we may access or collect the following information:</p>
                 
-                <h3 class="text-xl font-bold text-brand-chestnut mt-4 mb-3">Data Accessed Locally (NOT Uploaded to Servers)</h3>
+                <h3 class="mt-4 mb-3 text-[1.28rem] font-extrabold tracking-[-0.03em] text-brand-chestnut">Data Accessed Locally (NOT Uploaded to Servers)</h3>
                 <ul class="list-disc list-inside space-y-2 ml-4">
                     <li><strong>Music Files and Audio Files:</strong> We access your music files (MP3, FLAC, AAC, etc.) and other audio files stored on your device or cloud storage for playback purposes only. These files remain on YOUR device or YOUR cloud storage and are NEVER uploaded to our servers</li>
                     <li><strong>Album Artwork and Embedded Images:</strong> We access album cover images embedded in your music files or stored as separate image files (JPG, PNG) in your music folders for display purposes. These images are processed locally and not uploaded</li>
@@ -94,7 +102,7 @@
                     <li><strong>App Settings:</strong> Your preferences, equalizer settings, customization choices, and feature toggles</li>
                 </ul>
 
-                <h3 class="text-xl font-bold text-brand-chestnut mt-4 mb-3">Data Collected/Transmitted</h3>
+                <h3 class="mt-4 mb-3 text-[1.28rem] font-extrabold tracking-[-0.03em] text-brand-chestnut">Data Collected/Transmitted</h3>
                 <ul class="list-disc list-inside space-y-2 ml-4">
                     <li><strong>User IDs (Pseudonymous):</strong> Firebase Analytics automatically assigns a pseudonymous user identifier (<code>user_pseudo_id</code>) to each app installation. This ID is randomly generated, is not linked to your real name, email address, or any account, and is used solely to count unique users and analyze aggregate usage patterns. This corresponds to the "User IDs" category in Google Play's Data Safety form. You can reset this ID at any time by resetting your device's advertising ID in Android Settings 鈫?Privacy 鈫?Ads</li>
                     <li><strong>Device Identifiers:</strong> We collect device ID, advertising ID (for analytics purposes only), and installation ID to identify your device for analytics, crash reporting, and app functionality. These identifiers help us provide technical support and improve app performance</li>
@@ -107,7 +115,7 @@
                     <li><strong>Subscription Information:</strong> Purchase records and subscription status for premium features (processed by Google Play)</li>
                 </ul>
 
-                <h3 class="text-xl font-bold text-brand-chestnut mt-4 mb-3">Important Clarifications</h3>
+                <h3 class="mt-4 mb-3 text-[1.28rem] font-extrabold tracking-[-0.03em] text-brand-chestnut">Important Clarifications</h3>
                 <ul class="list-disc list-inside space-y-2 ml-4">
                     <li><strong>Music Files:</strong> We access and play your music files locally. Your music files are NEVER uploaded to our servers or shared with third parties</li>
                     <li><strong>Photos and Videos:</strong> While our storage permission may technically allow access to photos and videos on older Android versions (due to READ_EXTERNAL_STORAGE permission limitations), we do NOT access, process, collect, or view your personal photos or videos. We only access music-related images (album artwork)</li>
@@ -122,8 +130,8 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">3. How We Use Your Data</h2>
-                <p class="leading-relaxed mb-3">We use your data to:</p>
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">3. How We Use Your Data</h2>
+                <p class="mb-3 text-[0.98rem] leading-8">We use your data to:</p>
                 <ul class="list-disc list-inside space-y-2 ml-4">
                     <li>Provide and maintain the music playback functionality</li>
                     <li>Sync your music library using your own connected cloud storage providers (if you enable cloud features)</li>
@@ -138,8 +146,8 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">4. Privacy-First Approach</h2>
-                <p class="leading-relaxed mb-3">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">4. Privacy-First Approach</h2>
+                <p class="mb-3 text-[0.98rem] leading-8">
                     LizMusic is designed with privacy as a core principle:
                 </p>
                 <ul class="list-disc list-inside space-y-2 ml-4">
@@ -155,23 +163,23 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">4a. Data Controller Information</h2>
-                <p class="leading-relaxed mb-3">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">4a. Data Controller Information</h2>
+                <p class="mb-3 text-[0.98rem] leading-8">
                     <strong>Data Controller:</strong> LizMusic (Individual Developer) is the data controller responsible for your personal data.
                 </p>
-                <p class="leading-relaxed mb-3">
+                <p class="mb-3 text-[0.98rem] leading-8">
                     <strong>Contact Information:</strong><br>
                     Email: lizmediaapp@gmail.com
                 </p>
-                <p class="leading-relaxed mb-3">
+                <p class="mb-3 text-[0.98rem] leading-8">
                     <strong>Data Protection Contact:</strong><br>
                     We do not have a designated Data Protection Officer as we are an individual developer and do not engage in large-scale processing of personal data. For all privacy-related inquiries, data protection questions, or to exercise your rights, please contact us at: lizmediaapp@gmail.com
                 </p>
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">4b. Legal Basis for Processing</h2>
-                <p class="leading-relaxed mb-3">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">4b. Legal Basis for Processing</h2>
+                <p class="mb-3 text-[0.98rem] leading-8">
                     We process your personal data based on the following legal grounds:
                 </p>
                 <ul class="list-disc list-inside space-y-2 ml-4">
@@ -183,8 +191,8 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">4c. Data Retention Policy</h2>
-                <p class="leading-relaxed mb-3">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">4c. Data Retention Policy</h2>
+                <p class="mb-3 text-[0.98rem] leading-8">
                     We retain your personal data only for as long as necessary to fulfill the purposes outlined in this policy:
                 </p>
                 <ul class="list-disc list-inside space-y-2 ml-4">
@@ -200,8 +208,8 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">4d. Data Sharing and Third-Party Access</h2>
-                <p class="leading-relaxed mb-3">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">4d. Data Sharing and Third-Party Access</h2>
+                <p class="mb-3 text-[0.98rem] leading-8">
                     <strong>We do not sell your personal data to third parties.</strong> We share limited data only with the following service providers:
                 </p>
                 <ul class="list-disc list-inside space-y-2 ml-4">
@@ -218,18 +226,18 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">5. Cloud Storage Integration</h2>
-                <p class="leading-relaxed mb-3">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">5. Cloud Storage Integration</h2>
+                <p class="mb-3 text-[0.98rem] leading-8">
                     <strong>User-Provided Cloud Storage:</strong> LizMusic does NOT provide cloud storage services. To use cloud sync features,
                     you must have your own accounts with third-party providers (such as WebDAV-compatible servers or OneDrive) that YOU
                     set up and pay for independently.
                 </p>
-                <p class="leading-relaxed mb-3">
+                <p class="mb-3 text-[0.98rem] leading-8">
                     When you connect your personal cloud storage accounts, your music files are synced directly between YOUR device
                     and YOUR cloud provider. LizMusic does NOT store, access, or process your music files on our servers.
                     We only store the encrypted connection credentials locally on your device.
                 </p>
-                <p class="leading-relaxed mb-3">
+                <p class="mb-3 text-[0.98rem] leading-8">
                     Your cloud provider's privacy policy applies to any data stored in your cloud accounts. You are responsible for:
                 </p>
                 <ul class="list-disc list-inside space-y-2 ml-4 mb-3">
@@ -244,8 +252,8 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">6. Data Security</h2>
-                <p class="leading-relaxed">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">6. Data Security</h2>
+                <p class="text-[0.98rem] leading-8">
                     We implement appropriate technical and organizational measures to protect your data against unauthorized
                     access, alteration, disclosure, or destruction. However, no method of electronic storage is 100% secure,
                     and we cannot guarantee absolute security.
@@ -253,8 +261,8 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">7. Third-Party Services</h2>
-                <p class="leading-relaxed mb-3">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">7. Third-Party Services</h2>
+                <p class="mb-3 text-[0.98rem] leading-8">
                     LizMusic integrates with the following third-party services:
                 </p>
                 <ul class="list-disc list-inside space-y-2 ml-4">
@@ -269,16 +277,16 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">8. Children's Privacy</h2>
-                <p class="leading-relaxed">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">8. Children's Privacy</h2>
+                <p class="text-[0.98rem] leading-8">
                     LizMusic does not knowingly collect personal information from children under 13. If you are a parent or
                     guardian and believe your child has provided us with personal information, please contact us.
                 </p>
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">9. Your Rights and How to Exercise Them</h2>
-                <p class="leading-relaxed mb-3">You have the following rights regarding your personal data:</p>
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">9. Your Rights and How to Exercise Them</h2>
+                <p class="mb-3 text-[0.98rem] leading-8">You have the following rights regarding your personal data:</p>
                 <ul class="list-disc list-inside space-y-2 ml-4">
                     <li><strong>Right to Access:</strong> You can access your data stored in the app settings at any time</li>
                     <li><strong>Right to Rectification/Correction:</strong> You have the right to correct or update any inaccurate personal data. You can edit your preferences, playlists, and settings directly in the app. For data we store, contact us at lizmediaapp@gmail.com</li>
@@ -296,11 +304,11 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">9a. Opt-Out of Data Sharing and Sales</h2>
-                <p class="leading-relaxed mb-3">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">9a. Opt-Out of Data Sharing and Sales</h2>
+                <p class="mb-3 text-[0.98rem] leading-8">
                     <strong>We do not sell your personal data.</strong> We do not share your data for cross-context behavioral advertising or targeted advertising purposes.
                 </p>
-                <p class="leading-relaxed mb-3">
+                <p class="mb-3 text-[0.98rem] leading-8">
                     If you want to opt-out of data sharing with third-party analytics providers:
                 </p>
                 <ul class="list-disc list-inside space-y-2 ml-4">
@@ -318,8 +326,8 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">9b. GDPR Rights (European Union Users)</h2>
-                <p class="leading-relaxed mb-3">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">9b. GDPR Rights (European Union Users)</h2>
+                <p class="mb-3 text-[0.98rem] leading-8">
                     If you are located in the European Union (EU), European Economic Area (EEA), United Kingdom (UK), or Switzerland, you have additional rights under the General Data Protection Regulation (GDPR):
                 </p>
                 <ul class="list-disc list-inside space-y-2 ml-4">
@@ -341,8 +349,8 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">9c. CCPA Rights (California Users)</h2>
-                <p class="leading-relaxed mb-3">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">9c. CCPA Rights (California Users)</h2>
+                <p class="mb-3 text-[0.98rem] leading-8">
                     If you are a California resident, you have specific rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA):
                 </p>
                 <ul class="list-disc list-inside space-y-2 ml-4">
@@ -363,8 +371,8 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">9d. VCDPA Rights (Virginia Users)</h2>
-                <p class="leading-relaxed mb-3">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">9d. VCDPA Rights (Virginia Users)</h2>
+                <p class="mb-3 text-[0.98rem] leading-8">
                     If you are a Virginia resident, you have rights under the Virginia Consumer Data Protection Act (VCDPA):
                 </p>
                 <ul class="list-disc list-inside space-y-2 ml-4">
@@ -383,8 +391,8 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">9e. LGPD Rights (Brazil Users)</h2>
-                <p class="leading-relaxed mb-3">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">9e. LGPD Rights (Brazil Users)</h2>
+                <p class="mb-3 text-[0.98rem] leading-8">
                     If you are a resident of Brazil, you have rights under the Lei Geral de Prote莽茫o de Dados (LGPD) - Brazil's General Data Protection Law:
                 </p>
                 <ul class="list-disc list-inside space-y-2 ml-4">
@@ -408,16 +416,16 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">10. Changes to This Policy</h2>
-                <p class="leading-relaxed">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">10. Changes to This Policy</h2>
+                <p class="text-[0.98rem] leading-8">
                     We may update this privacy policy from time to time. We will notify you of any changes by posting the
                     new policy on this page and updating the "Last updated" date.
                 </p>
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">11. Permissions Explained</h2>
-                <p class="leading-relaxed mb-3">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">11. Permissions Explained</h2>
+                <p class="mb-3 text-[0.98rem] leading-8">
                     LizMusic requests the following permissions to provide its features. All permissions are used only for their stated purpose:
                 </p>
                 <ul class="list-disc list-inside space-y-2 ml-4">
@@ -438,8 +446,8 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-black text-brand-chestnut mb-4">12. Contact Us</h2>
-                <p class="leading-relaxed">
+                <h2 class="mb-4 text-[2rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-brand-chestnut">12. Contact Us</h2>
+                <p class="text-[0.98rem] leading-8">
                     If you have any questions about this privacy policy, please contact us at:
                 </p>
                 <p class="mt-3 font-bold text-brand-chestnut">
@@ -448,25 +456,25 @@
             </section>
         </div>
         <section class="mt-12 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
-            <h2 class="text-3xl font-extrabold text-slate-900">Explore more LizMusic pages</h2>
-            <p class="mt-4 max-w-3xl text-sm leading-7 text-slate-600">
+            <h2 class="text-[2.35rem] font-extrabold leading-[1.04] tracking-[-0.05em] text-slate-900">Explore more LizMusic pages</h2>
+            <p class="mt-4 max-w-3xl text-[0.98rem] leading-8 text-slate-600">
                 If you landed here while checking the app, these pages explain the playback and library features more directly.
             </p>
             <div class="mt-6 grid gap-4 md:grid-cols-2">
                 <a href="/features.html" class="rounded-2xl border border-slate-200 bg-slate-50 p-5 transition-all hover:-translate-y-1 hover:border-orange-300 hover:shadow-lg">
-                    <h3 class="font-bold text-slate-900">LizMusic features overview</h3>
-                    <p class="mt-2 text-sm leading-7 text-slate-600">See how the Android app handles local music, WebDAV, OneDrive, offline cache, lyrics, and playlists.</p>
+                    <h3 class="text-[1.2rem] font-extrabold tracking-[-0.03em] text-slate-900">LizMusic features overview</h3>
+                    <p class="mt-2 text-[0.98rem] leading-8 text-slate-600">See how the Android app handles local music, WebDAV, OneDrive, offline cache, lyrics, and playlists.</p>
                 </a>
                 <a href="/offline-music-player-android.html" class="rounded-2xl border border-slate-200 bg-slate-50 p-5 transition-all hover:-translate-y-1 hover:border-orange-300 hover:shadow-lg">
-                    <h3 class="font-bold text-slate-900">Offline music player for Android</h3>
-                    <p class="mt-2 text-sm leading-7 text-slate-600">Learn how LizMusic supports local playback and offline-friendly listening workflows.</p>
+                    <h3 class="text-[1.2rem] font-extrabold tracking-[-0.03em] text-slate-900">Offline music player for Android</h3>
+                    <p class="mt-2 text-[0.98rem] leading-8 text-slate-600">Learn how LizMusic supports local playback and offline-friendly listening workflows.</p>
                 </a>
             </div>
         </section>
 
         <section class="mt-12 rounded-3xl bg-slate-900 px-8 py-10 text-white">
             <h2 class="text-3xl font-extrabold">Download LizMusic on Android</h2>
-            <p class="mt-4 max-w-3xl text-sm leading-7 text-slate-300">
+            <p class="mt-4 max-w-3xl text-[0.98rem] leading-8 text-slate-300">
                 LizMusic is built for listeners who want control over local files, WebDAV servers, OneDrive libraries, and offline cache in one app.
             </p>
             <div class="mt-6">
@@ -476,8 +484,8 @@
             </div>
         </section>
     </main>
-    <footer class="border-t border-slate-200 bg-white py-8 px-6">
-        <div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 text-sm text-slate-500 sm:flex-row">
+    <footer class="border-t border-[#eee2d7] bg-white/88 py-10 px-6">
+        <div class="mx-auto flex max-w-[1400px] flex-col items-center justify-between gap-4 text-[0.96rem] text-[#7a7a7a] sm:flex-row">
             <p>&copy; 2026 Liz Media. All rights reserved.</p>
             <nav class="flex gap-6">
                 <a href="/features.html" class="hover:text-brand-chestnut">Features</a>
@@ -488,4 +496,6 @@
     </footer>
 </body>
 </html>
+
+
 
