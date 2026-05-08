@@ -1,1 +1,0 @@
-import{j as i}from"./index-Bm3O1e4w.js";import{P as r}from"./PrivacyPolicyContent-C1MTScCF.js";const e=()=>i.jsx("div",{className:"min-h-screen bg-white",children:i.jsx("div",{className:"max-w-4xl mx-auto px-6 py-8",children:i.jsx(r,{})})});export{e as PrivacyPolicyPlain};
