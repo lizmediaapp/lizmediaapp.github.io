@@ -49,8 +49,19 @@
         }
     </script>
 </head>
-<body class="min-h-screen bg-white">
-    <div class="max-w-4xl mx-auto px-6 py-8">
+<body class="min-h-screen bg-slate-50 text-slate-800">
+    <header class="border-b border-slate-200 bg-white py-4 px-6">
+        <div class="mx-auto flex max-w-5xl items-center justify-between gap-4">
+            <a href="/" class="flex items-center gap-3">
+                <img src="/image/lizmusic.ico" alt="LizMusic" class="h-10 w-10 rounded-lg">
+                <span class="text-xl font-bold text-slate-900">LizMusic</span>
+            </a>
+            <a href="/" class="rounded-lg bg-orange-50 px-4 py-2 text-sm font-medium text-brand-chestnut transition-colors hover:bg-orange-100">
+                Back to Home
+            </a>
+        </div>
+    </header>
+    <main class="max-w-4xl mx-auto px-6 py-8">
         <h1 class="text-4xl md:text-5xl font-black text-brand-chestnut mb-8">Privacy Policy</h1>
         <p class="text-sm text-text-muted mb-8">Last updated: March 11, 2026</p>
         <p class="text-sm text-text-muted mb-8 font-semibold">Version 1.0.4</p>
@@ -436,6 +447,44 @@
                 </p>
             </section>
         </div>
-    </div>
+        <section class="mt-12 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
+            <h2 class="text-3xl font-extrabold text-slate-900">Explore more LizMusic pages</h2>
+            <p class="mt-4 max-w-3xl text-sm leading-7 text-slate-600">
+                If you landed here while checking the app, these pages explain the playback and library features more directly.
+            </p>
+            <div class="mt-6 grid gap-4 md:grid-cols-2">
+                <a href="/features.html" class="rounded-2xl border border-slate-200 bg-slate-50 p-5 transition-all hover:-translate-y-1 hover:border-orange-300 hover:shadow-lg">
+                    <h3 class="font-bold text-slate-900">LizMusic features overview</h3>
+                    <p class="mt-2 text-sm leading-7 text-slate-600">See how the Android app handles local music, WebDAV, OneDrive, offline cache, lyrics, and playlists.</p>
+                </a>
+                <a href="/offline-music-player-android.html" class="rounded-2xl border border-slate-200 bg-slate-50 p-5 transition-all hover:-translate-y-1 hover:border-orange-300 hover:shadow-lg">
+                    <h3 class="font-bold text-slate-900">Offline music player for Android</h3>
+                    <p class="mt-2 text-sm leading-7 text-slate-600">Learn how LizMusic supports local playback and offline-friendly listening workflows.</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="mt-12 rounded-3xl bg-slate-900 px-8 py-10 text-white">
+            <h2 class="text-3xl font-extrabold">Download LizMusic on Android</h2>
+            <p class="mt-4 max-w-3xl text-sm leading-7 text-slate-300">
+                LizMusic is built for listeners who want control over local files, WebDAV servers, OneDrive libraries, and offline cache in one app.
+            </p>
+            <div class="mt-6">
+                <a href="https://play.google.com/store/apps/details?id=io.vicp.pomok.liz.music" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-xl bg-orange-500 px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-orange-400">
+                    Download on Google Play
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="border-t border-slate-200 bg-white py-8 px-6">
+        <div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 text-sm text-slate-500 sm:flex-row">
+            <p>&copy; 2026 Liz Media. All rights reserved.</p>
+            <nav class="flex gap-6">
+                <a href="/features.html" class="hover:text-brand-chestnut">Features</a>
+                <a href="/terms-plain.html" class="hover:text-brand-chestnut">Terms</a>
+                <a href="/privacy-plain.html" class="hover:text-brand-chestnut">Privacy</a>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
