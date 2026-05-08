@@ -41,7 +41,7 @@
             color: #333;
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 120px 20px 20px;
             background-color: #f9f9f9;
         }
         .container {
@@ -138,14 +138,24 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid #e5e7eb;">
-            <a href="/" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#111827;font-weight:700;font-size:1.1rem;">
-                <img src="/image/lizmusic-logo.png" alt="LizMusic" style="width:40px;height:40px;border-radius:10px;">
-                <span>LizMusic</span>
+    <header style="position:fixed;left:16px;right:16px;top:20px;z-index:40;">
+        <div style="max-width:1400px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:86px;padding:0 24px;border:1px solid #efe3d7;border-radius:32px;background:rgba(255,255,255,0.94);box-shadow:0 22px 60px -38px rgba(106,74,47,0.35);backdrop-filter:blur(20px);">
+            <a href="/" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#141414;">
+                <img src="/image/lizmusic-logo.png" alt="LizMusic" style="width:48px;height:48px;border-radius:16px;object-fit:contain;">
+                <span style="font-size:2rem;font-weight:800;letter-spacing:-0.05em;">LizMusic</span>
             </a>
-            <a href="/" style="display:inline-flex;align-items:center;text-decoration:none;border-radius:12px;padding:10px 16px;font-size:0.95rem;font-weight:600;background:#fff7ed;color:#8B5A2B;">Back to Home</a>
+            <nav style="display:flex;align-items:center;gap:40px;">
+                <a href="/" style="text-decoration:none;color:#1c1c1c;font-size:1.05rem;font-weight:500;">Home</a>
+                <a href="/features.html" style="text-decoration:none;color:#1c1c1c;font-size:1.05rem;font-weight:500;">Features</a>
+                <a href="/privacy-plain.html" style="text-decoration:none;color:#1c1c1c;font-size:1.05rem;font-weight:500;">Privacy</a>
+                <a href="/terms-plain.html" style="text-decoration:none;color:#1c1c1c;font-size:1.05rem;font-weight:500;">Terms</a>
+            </nav>
+            <a href="https://play.google.com/store/apps/details?id=io.vicp.pomok.liz.music" target="_blank" rel="noopener noreferrer" style="display:inline-flex;min-width:148px;align-items:center;justify-content:center;border-radius:18px;background:#f47c20;padding:16px 24px;color:white;text-decoration:none;font-size:1rem;font-weight:700;box-shadow:0 16px 32px -22px rgba(244,124,32,0.8);">
+                Get App
+            </a>
         </div>
+    </header>
+    <div class="container">
         <h1>Sponsorship Terms & Conditions</h1>
         <div class="meta">
             <p>Last updated: February 11, 2026</p>

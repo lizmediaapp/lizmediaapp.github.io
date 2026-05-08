@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,19 +20,25 @@
     <script>tailwind.config={theme:{extend:{colors:{primary:'#f97316'}}}};</script>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans">
-    <header class="border-b border-slate-200 bg-white py-4 px-6">
-        <div class="mx-auto flex max-w-5xl items-center justify-between gap-4">
-            <a href="/" class="flex items-center gap-3">
-                <img src="/image/lizmusic-logo.png" alt="LizMusic" class="h-10 w-10 rounded-lg">
-                <span class="text-xl font-bold text-slate-900">LizMusic</span>
-            </a>
-            <a href="/" class="rounded-lg bg-orange-50 px-4 py-2 text-sm font-medium text-primary transition-colors hover:bg-orange-100">
-                Back to Home
-            </a>
-        </div>
-    </header>
+    <header class="fixed left-0 right-0 top-5 z-40 px-4 sm:px-6">
+    <div class="mx-auto flex h-[86px] max-w-[1400px] items-center justify-between rounded-[2rem] border border-[#efe3d7] bg-white/94 px-6 shadow-[0_22px_60px_-38px_rgba(106,74,47,0.35)] backdrop-blur-xl sm:px-8 lg:px-10">
+        <a href="/" class="flex items-center gap-3 transition-opacity hover:opacity-90">
+            <img src="/image/lizmusic-logo.png" alt="LizMusic" class="h-12 w-12 rounded-2xl object-contain">
+            <span class="text-[2rem] font-extrabold tracking-[-0.05em] text-[#141414]">LizMusic</span>
+        </a>
+        <nav class="hidden items-center gap-10 lg:flex">
+            <a href="/" class="text-[1.05rem] font-medium text-[#1c1c1c] transition-colors hover:text-primary">Home</a>
+            <a href="/features.html" class="text-[1.05rem] font-medium text-[#1c1c1c] transition-colors hover:text-primary">Features</a>
+            <a href="/privacy-plain.html" class="text-[1.05rem] font-medium text-[#1c1c1c] transition-colors hover:text-primary">Privacy</a>
+            <a href="/terms-plain.html" class="text-[1.05rem] font-medium text-[#1c1c1c] transition-colors hover:text-primary">Terms</a>
+        </nav>
+        <a href="https://play.google.com/store/apps/details?id=io.vicp.pomok.liz.music" target="_blank" rel="noopener noreferrer" class="inline-flex min-w-[148px] items-center justify-center rounded-[1.1rem] bg-[#f47c20] px-6 py-4 text-base font-bold text-white shadow-[0_16px_32px_-22px_rgba(244,124,32,0.8)] transition-transform hover:-translate-y-0.5">
+            Get App
+        </a>
+    </div>
+</header>
 
-    <main class="mx-auto max-w-5xl px-6 py-12">
+    <main class="mx-auto max-w-5xl px-6 pt-40 pb-12">
         <div class="max-w-3xl">
             <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary">Offline Listening</p>
             <h1 class="mt-4 text-4xl font-extrabold text-slate-900">Use LizMusic as an offline music player for Android</h1>
@@ -101,3 +107,4 @@
     </footer>
 </body>
 </html>
+
