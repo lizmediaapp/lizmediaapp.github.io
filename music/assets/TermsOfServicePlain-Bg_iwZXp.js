@@ -1,1 +1,0 @@
-import{j as e}from"./index-CkjRe7J5.js";import{T as r}from"./TermsOfServiceContent-Slfkl3e2.js";const m=()=>e.jsx("div",{className:"min-h-screen bg-white",children:e.jsx("div",{className:"max-w-4xl mx-auto px-6 py-8",children:e.jsx(r,{})})});export{m as TermsOfServicePlain};
