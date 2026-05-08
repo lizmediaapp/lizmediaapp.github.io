@@ -44,7 +44,21 @@
 </head>
 <body class="min-h-screen bg-orange-50 text-slate-900">
     <main class="mx-auto max-w-5xl px-6 py-12">
-        <a href="/" class="inline-flex rounded-full bg-white px-4 py-2 text-sm font-bold text-brand-chestnut shadow-sm">LizMusic Home</a>
+        <header class="flex flex-col gap-6 rounded-[32px] bg-white p-6 shadow-lg shadow-orange-100 md:flex-row md:items-center md:justify-between">
+            <a href="/" class="flex items-center gap-4">
+                <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-yellow-400 to-green-500 shadow-md">
+                    <img src="/image/lizmusic.ico" alt="LizMusic logo" class="h-8 w-8">
+                </span>
+                <span>
+                    <span class="block text-2xl font-black text-brand-chestnut">LizMusic</span>
+                    <span class="block text-sm font-medium text-text-muted">Android music player for local libraries, WebDAV, and OneDrive</span>
+                </span>
+            </a>
+            <div class="flex flex-wrap gap-3">
+                <a href="https://play.google.com/store/apps/details?id=io.vicp.pomok.liz.music" target="_blank" rel="noopener noreferrer" class="rounded-full bg-brand-chestnut px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-[#6f3410]">Download on Google Play</a>
+                <a href="/" class="rounded-full bg-orange-100 px-5 py-3 text-sm font-bold text-brand-chestnut transition-colors hover:bg-orange-200">Official Home</a>
+            </div>
+        </header>
         <section class="mt-8 rounded-[32px] bg-gradient-to-br from-brand-amber to-yellow-300 p-8 md:p-12 shadow-xl">
             <p class="text-sm font-bold uppercase tracking-[0.2em] text-brand-chestnut/70">Feature Overview</p>
             <h1 class="mt-4 text-4xl font-black leading-tight text-brand-chestnut md:text-6xl">LizMusic is built for people who manage their own music library.</h1>
@@ -100,6 +114,16 @@
                     <h3 class="text-xl font-black text-brand-chestnut">Android Music Player With Lyrics</h3>
                     <p class="mt-2 text-sm leading-relaxed text-text-muted">For organized listening with lyrics, playlists, favorites, and album-first browsing.</p>
                 </a>
+            </div>
+        </section>
+        <section class="mt-10 rounded-3xl bg-brand-chestnut p-8 text-white shadow-lg">
+            <h2 class="text-3xl font-black">Try LizMusic on Android</h2>
+            <p class="mt-3 max-w-3xl text-base leading-relaxed text-orange-50/90">
+                If you want an Android player built around your own music files instead of a streaming catalog, start with the official app download and then explore the rest of the feature guides from the main site.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-3">
+                <a href="https://play.google.com/store/apps/details?id=io.vicp.pomok.liz.music" target="_blank" rel="noopener noreferrer" class="rounded-full bg-white px-5 py-3 text-sm font-bold text-brand-chestnut">Get LizMusic</a>
+                <a href="/" class="rounded-full bg-orange-400 px-5 py-3 text-sm font-bold text-brand-chestnut">Back to LizMusic Home</a>
             </div>
         </section>
     </main>
