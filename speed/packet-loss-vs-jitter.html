@@ -123,6 +123,52 @@
       </article>
     </section>
 
+    <section class="mt-12 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
+      <h2 class="text-3xl font-extrabold text-slate-900">Why people confuse these two metrics</h2>
+      <p class="mt-4 text-sm leading-7 text-slate-600">
+        Both packet loss and jitter can make a connection feel bad in calls and games, so the symptoms can overlap. The difference is that packet loss means some information disappears, while jitter means the timing keeps changing even if the information still arrives.
+      </p>
+      <p class="mt-4 text-sm leading-7 text-slate-600">
+        If the connection sounds broken, freezes, or drops actions entirely, packet loss deserves attention first. If the connection feels uneven or randomly spiky, jitter may be the better explanation.
+      </p>
+    </section>
+
+    <section class="mt-12 grid gap-6 md:grid-cols-2">
+      <article class="rounded-2xl border border-slate-200 bg-white p-7">
+        <h2 class="text-2xl font-bold text-slate-900">What to test next</h2>
+        <ul class="mt-4 list-disc space-y-2 pl-5 text-sm leading-7 text-slate-600">
+          <li>Repeat tests instead of trusting one run</li>
+          <li>Compare near the router and in the problem location</li>
+          <li>Check whether the issue changes by time of day</li>
+          <li>Compare another server or connection path</li>
+        </ul>
+      </article>
+      <article class="rounded-2xl border border-slate-200 bg-white p-7">
+        <h2 class="text-2xl font-bold text-slate-900">When both metrics are elevated</h2>
+        <p class="mt-4 text-sm leading-7 text-slate-600">
+          If packet loss and jitter are both bad, the connection is usually unstable in more than one way. That often points to weak Wi-Fi, heavy congestion, poor mobile conditions, or broader routing trouble rather than a simple bandwidth issue.
+        </p>
+      </article>
+    </section>
+
+    <section class="mt-12 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
+      <h2 class="text-3xl font-extrabold text-slate-900">FAQ about packet loss vs jitter</h2>
+      <div class="mt-6 grid gap-4">
+        <details class="rounded-2xl border border-slate-200 p-5">
+          <summary class="cursor-pointer font-bold text-slate-900">Which metric should I worry about first?</summary>
+          <p class="mt-3 text-sm leading-7 text-slate-600">If packet loss is clearly above zero and symptoms are severe, start there first. If loss is zero but the connection still feels unstable, focus on jitter.</p>
+        </details>
+        <details class="rounded-2xl border border-slate-200 p-5">
+          <summary class="cursor-pointer font-bold text-slate-900">Can I have good speed but bad packet loss or jitter?</summary>
+          <p class="mt-3 text-sm leading-7 text-slate-600">Yes. Throughput can look fine while stability is still poor.</p>
+        </details>
+        <details class="rounded-2xl border border-slate-200 p-5">
+          <summary class="cursor-pointer font-bold text-slate-900">Should I compare ping too?</summary>
+          <p class="mt-3 text-sm leading-7 text-slate-600">Yes. Ping adds the delay side of the picture, while packet loss and jitter explain data loss and instability.</p>
+        </details>
+      </div>
+    </section>
+
     <section class="mt-12 rounded-3xl bg-slate-900 px-8 py-10 text-white">
       <h2 class="text-3xl font-extrabold">How to tell which one matters more</h2>
       <ol class="mt-6 list-decimal space-y-3 pl-5 text-sm leading-7 text-slate-300">
@@ -144,6 +190,24 @@
         </a>
         <a href="./what-is-good-packet-loss.html" class="inline-flex rounded-xl border border-slate-200 px-6 py-3 text-sm font-bold text-slate-900 transition-colors hover:border-primary/40 hover:text-primary">
           Related: Good Packet Loss
+        </a>
+      </div>
+    </section>
+
+    <section class="mt-12 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
+      <h2 class="text-3xl font-extrabold text-slate-900">Related guides</h2>
+      <div class="mt-6 grid gap-4 md:grid-cols-3">
+        <a href="./what-is-packet-loss.html" class="rounded-2xl border border-slate-200 bg-slate-50 p-5 transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg">
+          <h3 class="font-bold text-slate-900">What is packet loss?</h3>
+          <p class="mt-2 text-sm leading-7 text-slate-600">Understand dropped data before comparing metrics.</p>
+        </a>
+        <a href="./what-is-jitter.html" class="rounded-2xl border border-slate-200 bg-slate-50 p-5 transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg">
+          <h3 class="font-bold text-slate-900">What is jitter?</h3>
+          <p class="mt-2 text-sm leading-7 text-slate-600">Review unstable latency in more detail.</p>
+        </a>
+        <a href="./jitter-vs-ping.html" class="rounded-2xl border border-slate-200 bg-slate-50 p-5 transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg">
+          <h3 class="font-bold text-slate-900">Jitter vs ping</h3>
+          <p class="mt-2 text-sm leading-7 text-slate-600">Compare instability with response delay too.</p>
         </a>
       </div>
     </section>
