@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script>
+      // canonical-host-redirect
+      (function () {
+        var targetHost = window.location.hostname.toLowerCase();
+        var path = window.location.pathname || '/';
+        var search = window.location.search || '';
+        var hash = window.location.hash || '';
+
+        if (targetHost === 'www.lizmediaapp.com' || targetHost === 'lizmediaapp.github.io') {
+          targetHost = 'lizmediaapp.com';
+        }
+
+        if (path === '/music' || path.indexOf('/music/') === 0) {
+          targetHost = 'music.lizmediaapp.com';
+          path = path.replace(/^\/music(?=\/|$)/, '') || '/';
+        } else if (path === '/speed' || path.indexOf('/speed/') === 0) {
+          targetHost = 'speed.lizmediaapp.com';
+          path = path.replace(/^\/speed(?=\/|$)/, '') || '/';
+        }
+
+        if (path === '/index.html') {
+          path = '/';
+        } else {
+          path = path.replace(/\/index\.html$/, '/');
+        }
+
+        var target = 'https://' + targetHost + path + search + hash;
+        if (target !== window.location.href) {
+          window.location.replace(target);
+        }
+      })();
+    </script>
+<title>Terms of Service | LizMedia</title>
+    <meta name="description" content="Read the LizMedia Terms of Service for the main product hub, including acceptable use and public website terms." />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta property="og:title" content="Terms of Service | LizMedia" />
+    <meta property="og:description" content="Read the LizMedia Terms of Service for the main product hub, including acceptable use and public website terms." />
+    <meta property="og:url" content="https://lizmediaapp.com/terms" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lizmediaapp.com/image/lizmedia-logo.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Terms of Service | LizMedia" />
+    <meta name="twitter:description" content="Read the LizMedia Terms of Service for the main product hub, including acceptable use and public website terms." />
+    <meta name="twitter:image" content="https://lizmediaapp.com/image/lizmedia-logo.png" />
+    <link rel="canonical" href="https://lizmediaapp.com/terms" />
+    <link rel="icon" type="image/x-icon" href="/image/lizmedia.ico" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "LizMedia",
+        "url": "https://lizmediaapp.com/",
+        "logo": "https://lizmediaapp.com/image/lizmedia-logo.png",
+        "sameAs": [
+          "https://music.lizmediaapp.com/",
+          "https://speed.lizmediaapp.com/",
+          "https://github.com/lizmediaapp"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "LizMedia",
+        "url": "https://lizmediaapp.com/",
+        "description": "LizMedia is the product hub for LizMusic and LizSpeedTest."
+      }
+    </script>
+
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search
+            .slice(1)
+            .split('&')
+            .map(function(s) {
+              return s.replace(/~and~/g, '&');
+            })
+            .join('?');
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <script type="module" crossorigin src="/assets/index-CCVeWL4Y.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D_4vxMkX.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div>
+        <p>LizMedia product pages and support links:</p>
+        <a href="https://music.lizmediaapp.com/">LizMusic</a>
+        <a href="https://speed.lizmediaapp.com/">LizSpeedTest</a>
+        <a href="https://speed.lizmediaapp.com/help.html">LizSpeedTest Help Center</a>
+        <a href="https://speed.lizmediaapp.com/what-is-ping.html">What is ping?</a>
+        <a href="https://speed.lizmediaapp.com/how-to-fix-slow-wifi.html">How to fix slow Wi-Fi</a>
+      </div>
+    </noscript>
+  </body>
+</html>
