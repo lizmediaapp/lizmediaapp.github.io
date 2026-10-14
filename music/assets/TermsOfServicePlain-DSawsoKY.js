@@ -1,0 +1,1 @@
+import{j as e}from"./index-BDnNekDW.js";import{T as r}from"./TermsOfServiceContent-CcHUG1nt.js";const m=()=>e.jsx("div",{className:"min-h-screen bg-white",children:e.jsx("div",{className:"max-w-4xl mx-auto px-6 py-8",children:e.jsx(r,{})})});export{m as TermsOfServicePlain};
